@@ -1,0 +1,20 @@
+{
+  "development": {
+    "by_rule": {
+      "BOUNDARY": 8,
+      "OVERLAP": 6,
+      "PROTECTED_POLYGON": 6
+    },
+    "semantic_tasks": 8,
+    "total": 20
+  },
+  "test": {
+    "by_rule": {
+      "BOUNDARY": 36,
+      "OVERLAP": 27,
+      "PROTECTED_POLYGON": 21
+    },
+    "semantic_tasks": 36,
+    "total": 84
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "actual_unique_cost_usd": 0.458349321,
+  "actual_unique_usage": {
+    "cached_tokens": 819072,
+    "completion_tokens": 209974,
+    "prompt_tokens": 1445975,
+    "total_tokens": 1655949
+  },
+  "completion": {
+    "expected_policy_outcomes": 630,
+    "gate_events": 1210,
+    "heldout_request_ids_observed": [
+      "task-0003-en",
+      "task-0003-zh",
+      "task-0004-en",
+      "task-0004-zh",
+      "task-0007-en",
+      "task-0007-zh",
+      "task-0008-en",
+      "task-0008-zh",
+      "task-0009-en",
+      "task-0009-zh",
+      "task-0012-en",
+      "task-0012-zh",
+      "task-0013-en",
+      "task-0013-zh",
+      "task-0014-en",
+      "task-0014-zh",
+      "task-0018-en",
+      "task-0018-zh",
+      "task-0019-en",
+      "task-0019-zh",
+      "task-0022-en",
+      "task-0022-zh",
+      "task-0023-en",
+      "task-0023-zh",
+      "task-0024-en",
+      "task-0024-zh",
+      "task-0027-en",
+      "task-0027-zh",
+      "task-0028-en",
+      "task-0028-zh",
+      "task-0029-en",
+      "task-0029-zh",
+      "task-0030-en",
+      "task-0030-zh",
+      "task-0062-en",
+      "task-0062-zh",
+      "task-0063-en",
+      "task-0063-zh",
+      "task-0064-en",
+      "task-0064-zh",
+      "task-0067-en",
+      "task-0067-zh",
+      "task-0068-en",
+      "task-0068-zh",
+      "task-0069-en",
+      "task-0069-zh",
+      "task-0072-en",
+      "task-0072-zh",
+      "task-0073-en",
+      "task-0073-zh",
+      "task-0074-en",
+      "task-0074-zh",
+      "task-0075-en",
+      "task-0075-zh",
+      "task-0077-en",
+      "task-0077-zh",
+      "task-0078-en",
+      "task-0078-zh",
+      "task-0079-en",
+      "task-0079-zh",
+      "task-0082-en",
+      "task-0082-zh",
+      "task-0083-en",
+      "task-0083-zh",
+      "task-0084-en",
+      "task-0084-zh",
+      "task-0087-en",
+      "task-0087-zh",
+      "task-0088-en",
+      "task-0088-zh",
+      "task-0089-en",
+      "task-0089-zh"
+    ],
+    "heldout_seed_ids_observed": [
+      "seed-task-0003-boundary+overlap",
+      "seed-task-0003-protected_polygon",
+      "seed-task-0004-boundary+protected_polygon",
+      "seed-task-0004-protected_polygon",
+      "seed-task-0007-boundary+overlap",
+      "seed-task-0007-overlap",
+      "seed-task-0008-overlap+protected_polygon",
+      "seed-task-0008-protected_polygon",
+      "seed-task-0009-overlap+protected_polygon",
+      "seed-task-0009-protected_polygon",
+      "seed-task-0012-boundary+overlap",
+      "seed-task-0012-overlap",
+      "seed-task-0013-boundary+protected_polygon",
+      "seed-task-0013-overlap",
+      "seed-task-0014-boundary+protected_polygon",
+      "seed-task-0014-protected_polygon",
+      "seed-task-0018-overlap+protected_polygon",
+      "seed-task-0018-protected_polygon",
+      "seed-task-0019-overlap+protected_polygon",
+      "seed-task-0019-protected_polygon",
+      "seed-task-0022-boundary",
+      "seed-task-0022-boundary+protected_polygon",
+      "seed-task-0023-boundary+overlap",
+      "seed-task-0023-overlap",
+      "seed-task-0024-boundary+overlap",
+      "seed-task-0024-overlap",
+      "seed-task-0027-boundary+protected_polygon",
+      "seed-task-0027-protected_polygon",
+      "seed-task-0028-boundary+protected_polygon",
+      "seed-task-0028-overlap",
+      "seed-task-0029-boundary+overlap",
+      "seed-task-0029-overlap",
+      "seed-task-0030-boundary+overlap",
+      "seed-task-0030-overlap",
+      "seed-task-0062-boundary",
+      "seed-task-0062-overlap+protected_polygon",
+      "seed-task-0063-boundary+protected_polygon",
+      "seed-task-0063-overlap",
+      "seed-task-0064-boundary",
+      "seed-task-0064-overlap+protected_polygon",
+      "seed-task-0067-overlap",
+      "seed-task-0067-overlap+protected_polygon",
+      "seed-task-0068-boundary+overlap",
+      "seed-task-0068-overlap",
+      "seed-task-0069-overlap+protected_polygon",
+      "seed-task-0069-protected_polygon",
+      "seed-task-0072-boundary+protected_polygon",
+      "seed-task-0072-protected_polygon",
+      "seed-task-0073-boundary+protected_polygon",
+      "seed-task-0073-protected_polygon",
+      "seed-task-0074-boundary",
+      "seed-task-0074-boundary+overlap",
+      "seed-task-0075-overlap",
+      "seed-task-0075-overlap+protected_polygon",
+      "seed-task-0077-boundary",
+      "seed-task-0078-boundary",
+      "seed-task-0079-boundary",
+      "seed-task-0082-boundary",
+      "seed-task-0083-boundary",
+      "seed-task-0084-boundary",
+      "seed-task-0087-boundary",
+      "seed-task-0088-boundary",
+      "seed-task-0089-boundary"
+    ],
+    "infrastructure_error_records": 0,
+    "recorded_policy_outcomes": 630,
+    "scheduled_jobs": 210,
+    "unique_model_calls": 580
+  },
+  "experiment_track": "formal_seeded_conditional_recovery",
+  "feedback_isolation_audit": {
+    "blind_retry_calls": 290,
+    "rule_feedback_calls": 290,
+    "rule_feedback_payloads_match_prompt": true
+  },
+  "initial_seed_audit": {
+    "all_initial_candidates_fail": true,
+    "all_initial_candidates_preserve_intent_signature": true,
+    "all_initial_rule_sets_match_declared_seed_rule": true
+  },
+  "model_quality": {
+    "infrastructure_retry_count": 0,
+    "length_truncations": 0,
+    "schema_valid_calls": 577
+  },
+  "paired_rule_vs_blind": {
+    "blind_retry_only_succeeded": 30,
+    "both_succeeded": 106,
+    "median_attempt_difference_rule_minus_blind": 0.0,
+    "neither_succeeded": 41,
+    "paired_cases": 210,
+    "rule_feedback_only_succeeded": 33
+  },
+  "policies": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "conceptual_policy_cost_usd": 0.21868685399999999,
+      "final_actions": {
+        "BLOCK": 19,
+        "DEFER": 22,
+        "EXPOSE": 169
+      },
+      "mean_model_calls": 1.380952380952381,
+      "median_total_latency_ms": 3467.79975,
+      "n": 210,
+      "safe_task_success_rate": 0.6476190476190476,
+      "safe_task_successes": 136,
+      "semantic_attempts": {
+        "1": 156,
+        "2": 28,
+        "3": 26
+      },
+      "usage": {
+        "cached_tokens": 398208,
+        "completion_tokens": 98807,
+        "prompt_tokens": 700004,
+        "total_tokens": 798811
+      }
+    },
+    "SEEDED_VALIDATE_AND_BLOCK": {
+      "conceptual_policy_cost_usd": 0.0,
+      "final_actions": {
+        "BLOCK": 210
+      },
+      "mean_model_calls": 0.0,
+      "median_total_latency_ms": 0.0,
+      "n": 210,
+      "safe_task_success_rate": 0.0,
+      "safe_task_successes": 0,
+      "semantic_attempts": {
+        "0": 210
+      },
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 0,
+        "prompt_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "conceptual_policy_cost_usd": 0.23966246700000002,
+      "final_actions": {
+        "BLOCK": 11,
+        "DEFER": 18,
+        "EXPOSE": 181
+      },
+      "mean_model_calls": 1.380952380952381,
+      "median_total_latency_ms": 4010.1672085,
+      "n": 210,
+      "safe_task_success_rate": 0.6619047619047619,
+      "safe_task_successes": 139,
+      "semantic_attempts": {
+        "1": 153,
+        "2": 34,
+        "3": 23
+      },
+      "usage": {
+        "cached_tokens": 420864,
+        "completion_tokens": 111167,
+        "prompt_tokens": 745971,
+        "total_tokens": 857138
+      }
+    }
+  },
+  "pricing": {
+    "access_date": "2026-07-21",
+    "billing_unit_tokens": 1000000,
+    "currency": "USD",
+    "model": "deepseek-v4-pro",
+    "prices_per_million_tokens": {
+      "cache_hit_input": 0.003625,
+      "cache_miss_input": 0.435,
+      "output": 0.87
+    },
+    "source": "https://api-docs.deepseek.com/quick_start/pricing"
+  },
+  "recovery": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "1": {
+        "entered": 210,
+        "marginal_recovery_rate": 0.5380952380952381,
+        "newly_recovered": 113,
+        "recovery_at_k": 0.5380952380952381
+      },
+      "2": {
+        "entered": 54,
+        "marginal_recovery_rate": 0.35185185185185186,
+        "newly_recovered": 19,
+        "recovery_at_k": 0.6285714285714286
+      },
+      "3": {
+        "entered": 26,
+        "marginal_recovery_rate": 0.15384615384615385,
+        "newly_recovered": 4,
+        "recovery_at_k": 0.6476190476190476
+      }
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "1": {
+        "entered": 210,
+        "marginal_recovery_rate": 0.5142857142857142,
+        "newly_recovered": 108,
+        "recovery_at_k": 0.5142857142857142
+      },
+      "2": {
+        "entered": 57,
+        "marginal_recovery_rate": 0.43859649122807015,
+        "newly_recovered": 25,
+        "recovery_at_k": 0.6333333333333333
+      },
+      "3": {
+        "entered": 23,
+        "marginal_recovery_rate": 0.2608695652173913,
+        "newly_recovered": 6,
+        "recovery_at_k": 0.6619047619047619
+      }
+    }
+  },
+  "rule_strata": {
+    "BOUNDARY": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 46,
+        "safe_task_success_rate": 0.5869565217391305,
+        "safe_task_successes": 27
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 46,
+        "safe_task_success_rate": 0.5652173913043478,
+        "safe_task_successes": 26
+      }
+    },
+    "BOUNDARY+OVERLAP": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 26,
+        "safe_task_success_rate": 0.7307692307692307,
+        "safe_task_successes": 19
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 26,
+        "safe_task_success_rate": 0.6923076923076923,
+        "safe_task_successes": 18
+      }
+    },
+    "BOUNDARY+PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 30,
+        "safe_task_success_rate": 0.5,
+        "safe_task_successes": 15
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 30,
+        "safe_task_success_rate": 0.6666666666666666,
+        "safe_task_successes": 20
+      }
+    },
+    "OVERLAP": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 40,
+        "safe_task_success_rate": 0.625,
+        "safe_task_successes": 25
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 40,
+        "safe_task_success_rate": 0.6,
+        "safe_task_successes": 24
+      }
+    },
+    "OVERLAP+PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 34,
+        "safe_task_success_rate": 0.7941176470588235,
+        "safe_task_successes": 27
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 34,
+        "safe_task_success_rate": 0.7941176470588235,
+        "safe_task_successes": 27
+      }
+    },
+    "PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 34,
+        "safe_task_success_rate": 0.6764705882352942,
+        "safe_task_successes": 23
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 34,
+        "safe_task_success_rate": 0.7058823529411765,
+        "safe_task_successes": 24
+      }
+    }
+  },
+  "run_id": "formal-seeded-deepseek-v1-2"
+}

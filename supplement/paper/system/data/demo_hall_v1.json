@@ -1,0 +1,22 @@
+{
+  "hall_id": "demo-hall",
+  "version": "v1",
+  "unit": "m",
+  "boundary": [[0, 0], [60, 0], [60, 40], [0, 40]],
+  "obstacles": [
+    {"id": "column-1", "type": "column", "polygon": [[45, 5], [47, 5], [47, 7], [45, 7]]}
+  ],
+  "exits": [
+    {"id": "exit-clearance-east", "type": "exit_clearance", "polygon": [[56, 34], [60, 34], [60, 40], [56, 40]]}
+  ],
+  "fixed_aisles": [
+    {"id": "main-aisle", "type": "fixed_aisle", "polygon": [[0, 12], [60, 12], [60, 16], [0, 16]]}
+  ],
+  "booths": [
+    {"id": "b-a101", "number": "A101", "x": 2, "y": 2, "width": 12, "height": 8, "status": "available", "type": "custom", "zone": "north", "source_version": "v1"},
+    {"id": "b-a103", "number": "A103", "x": 14, "y": 2, "width": 12, "height": 8, "status": "reserved", "type": "raw_space", "zone": "north", "source_version": "v1"},
+    {"id": "b-a105", "number": "A105", "x": 30, "y": 2, "width": 8, "height": 8, "status": "sold", "type": "custom", "zone": "north", "source_version": "v1"},
+    {"id": "b-b201", "number": "B201", "x": 2, "y": 18, "width": 6, "height": 6, "status": "available", "type": "standard", "zone": "south", "source_version": "v1"},
+    {"id": "b-b203", "number": "B203", "x": 10, "y": 18, "width": 6, "height": 6, "status": "locked", "type": "standard", "zone": "south", "source_version": "v1"}
+  ]
+}

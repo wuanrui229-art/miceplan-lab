@@ -1,0 +1,3011 @@
+{
+  "access_date": "2026-09-02",
+  "dataset_version": "miceplan-lab-v1.1",
+  "decoding": {
+    "extra_request_parameters": {
+      "reasoning_effort": "none",
+      "store": false
+    },
+    "max_output_tokens": 32768,
+    "max_tokens_parameter": "max_completion_tokens",
+    "output_contract": "provider-enforced response_format strict JSON Schema",
+    "semantic_repair_limit": 3,
+    "temperature": null
+  },
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "evidence_status": "formal held-out",
+  "expected": {
+    "jobs": 216,
+    "maximum_model_calls": 1728,
+    "minimum_model_calls": 432,
+    "policy_outcomes": 1080
+  },
+  "experiment_track": "formal_natural_incidence",
+  "extension_manifest_hash": "a0bb5fa34411d3b46a68d33f9697b4722e279e5e84b4813629b1bac93bb13f90",
+  "fault_seed_visible_as_previous_candidate": false,
+  "formal_selection_hash": "84ff631cf7754654d2b3d89e905a2cea4c850d7696cf2751202868256ebbcdaf",
+  "gold_visible_to_model": false,
+  "model_id": "gpt-5.6-sol",
+  "pricing_file": "PRICING_OPENAI_GPT56_SOL_2026-09-01.json",
+  "prompt_hashes": {
+    "base_generation.txt": "5ee387e631ba828865077527c7fa1fee95165026ce8e0baa31b582baacaa24fd",
+    "blind_retry.txt": "a7a7df21cc67764479802dc06f24f0623a81b61bd934f048958abe01bcef0136",
+    "constraint_generation.txt": "937cebf8bb25e1450fe4d8c9723f2bd89290bb51a13a26fa003ec007572eb82a",
+    "repair.txt": "efff1ebdaf359bfe55c8b6b46e862c9b06e91fab141f196a14b066beda1729fc"
+  },
+  "protocol_version": "miceplan-lab-validation-recovery-v1.2-openai-extension-2026-09-01",
+  "provider": "OpenAI API",
+  "provider_key": "openai",
+  "replicate_ids": [
+    1,
+    2,
+    3
+  ],
+  "run_id": "formal-natural-openai-v1-2-extension",
+  "schedule": [
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0088-zh",
+      "schedule_index": 0
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0058-en",
+      "schedule_index": 1
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0030-en",
+      "schedule_index": 2
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0072-en",
+      "schedule_index": 3
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0017-zh",
+      "schedule_index": 4
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0032-zh",
+      "schedule_index": 5
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0040-zh",
+      "schedule_index": 6
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0018-en",
+      "schedule_index": 7
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0037-zh",
+      "schedule_index": 8
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0049-zh",
+      "schedule_index": 9
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0058-zh",
+      "schedule_index": 10
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0079-zh",
+      "schedule_index": 11
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0005-en",
+      "schedule_index": 12
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0027-zh",
+      "schedule_index": 13
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0027-en",
+      "schedule_index": 14
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0073-en",
+      "schedule_index": 15
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0090-zh",
+      "schedule_index": 16
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0013-zh",
+      "schedule_index": 17
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0024-zh",
+      "schedule_index": 18
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0020-zh",
+      "schedule_index": 19
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0063-zh",
+      "schedule_index": 20
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0009-zh",
+      "schedule_index": 21
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0054-zh",
+      "schedule_index": 22
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0050-zh",
+      "schedule_index": 23
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0003-en",
+      "schedule_index": 24
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0009-en",
+      "schedule_index": 25
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0013-en",
+      "schedule_index": 26
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0048-en",
+      "schedule_index": 27
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0013-en",
+      "schedule_index": 28
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0029-en",
+      "schedule_index": 29
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0012-en",
+      "schedule_index": 30
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0037-en",
+      "schedule_index": 31
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0034-en",
+      "schedule_index": 32
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0018-zh",
+      "schedule_index": 33
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0065-en",
+      "schedule_index": 34
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0078-en",
+      "schedule_index": 35
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0019-en",
+      "schedule_index": 36
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0047-en",
+      "schedule_index": 37
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0009-en",
+      "schedule_index": 38
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0010-zh",
+      "schedule_index": 39
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0004-en",
+      "schedule_index": 40
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0083-zh",
+      "schedule_index": 41
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0018-zh",
+      "schedule_index": 42
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0003-zh",
+      "schedule_index": 43
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0060-en",
+      "schedule_index": 44
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0024-en",
+      "schedule_index": 45
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0028-en",
+      "schedule_index": 46
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0064-en",
+      "schedule_index": 47
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0065-en",
+      "schedule_index": 48
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0085-zh",
+      "schedule_index": 49
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0083-zh",
+      "schedule_index": 50
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0002-zh",
+      "schedule_index": 51
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0025-en",
+      "schedule_index": 52
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0069-zh",
+      "schedule_index": 53
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0078-zh",
+      "schedule_index": 54
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0039-en",
+      "schedule_index": 55
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0018-en",
+      "schedule_index": 56
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0058-zh",
+      "schedule_index": 57
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0013-en",
+      "schedule_index": 58
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0013-zh",
+      "schedule_index": 59
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0072-zh",
+      "schedule_index": 60
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0044-zh",
+      "schedule_index": 61
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0022-zh",
+      "schedule_index": 62
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0068-zh",
+      "schedule_index": 63
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0078-en",
+      "schedule_index": 64
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0027-zh",
+      "schedule_index": 65
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0009-zh",
+      "schedule_index": 66
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0027-en",
+      "schedule_index": 67
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0049-en",
+      "schedule_index": 68
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0039-zh",
+      "schedule_index": 69
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0080-zh",
+      "schedule_index": 70
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0003-zh",
+      "schedule_index": 71
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0053-zh",
+      "schedule_index": 72
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0082-en",
+      "schedule_index": 73
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0054-en",
+      "schedule_index": 74
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0022-en",
+      "schedule_index": 75
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0015-en",
+      "schedule_index": 76
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0002-en",
+      "schedule_index": 77
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0087-en",
+      "schedule_index": 78
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0083-en",
+      "schedule_index": 79
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0003-zh",
+      "schedule_index": 80
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0084-en",
+      "schedule_index": 81
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0078-zh",
+      "schedule_index": 82
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0087-zh",
+      "schedule_index": 83
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0045-zh",
+      "schedule_index": 84
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0070-en",
+      "schedule_index": 85
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0035-en",
+      "schedule_index": 86
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0064-zh",
+      "schedule_index": 87
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0080-en",
+      "schedule_index": 88
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0015-zh",
+      "schedule_index": 89
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0035-zh",
+      "schedule_index": 90
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0052-en",
+      "schedule_index": 91
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0050-en",
+      "schedule_index": 92
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0057-zh",
+      "schedule_index": 93
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0030-zh",
+      "schedule_index": 94
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0053-en",
+      "schedule_index": 95
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0045-en",
+      "schedule_index": 96
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0072-en",
+      "schedule_index": 97
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0044-en",
+      "schedule_index": 98
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0053-zh",
+      "schedule_index": 99
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0075-zh",
+      "schedule_index": 100
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0027-en",
+      "schedule_index": 101
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0070-zh",
+      "schedule_index": 102
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0025-zh",
+      "schedule_index": 103
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0072-zh",
+      "schedule_index": 104
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0074-en",
+      "schedule_index": 105
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0034-zh",
+      "schedule_index": 106
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0053-zh",
+      "schedule_index": 107
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0007-zh",
+      "schedule_index": 108
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0014-zh",
+      "schedule_index": 109
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0089-zh",
+      "schedule_index": 110
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0055-zh",
+      "schedule_index": 111
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0045-en",
+      "schedule_index": 112
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0043-en",
+      "schedule_index": 113
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0033-zh",
+      "schedule_index": 114
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0087-zh",
+      "schedule_index": 115
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0083-zh",
+      "schedule_index": 116
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0047-zh",
+      "schedule_index": 117
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0032-en",
+      "schedule_index": 118
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0008-en",
+      "schedule_index": 119
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0053-en",
+      "schedule_index": 120
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0017-en",
+      "schedule_index": 121
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0090-en",
+      "schedule_index": 122
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0013-zh",
+      "schedule_index": 123
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0087-en",
+      "schedule_index": 124
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0020-en",
+      "schedule_index": 125
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0024-en",
+      "schedule_index": 126
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0068-en",
+      "schedule_index": 127
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0058-en",
+      "schedule_index": 128
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0003-en",
+      "schedule_index": 129
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0039-zh",
+      "schedule_index": 130
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0069-en",
+      "schedule_index": 131
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0038-en",
+      "schedule_index": 132
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0079-en",
+      "schedule_index": 133
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0048-zh",
+      "schedule_index": 134
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0077-en",
+      "schedule_index": 135
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0023-zh",
+      "schedule_index": 136
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0005-zh",
+      "schedule_index": 137
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0083-en",
+      "schedule_index": 138
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0024-zh",
+      "schedule_index": 139
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0042-en",
+      "schedule_index": 140
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0068-en",
+      "schedule_index": 141
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0028-zh",
+      "schedule_index": 142
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0072-en",
+      "schedule_index": 143
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0068-en",
+      "schedule_index": 144
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0057-en",
+      "schedule_index": 145
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0058-zh",
+      "schedule_index": 146
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0034-en",
+      "schedule_index": 147
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0085-en",
+      "schedule_index": 148
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0062-en",
+      "schedule_index": 149
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0018-en",
+      "schedule_index": 150
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0053-en",
+      "schedule_index": 151
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0047-en",
+      "schedule_index": 152
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0004-zh",
+      "schedule_index": 153
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0010-en",
+      "schedule_index": 154
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0077-zh",
+      "schedule_index": 155
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0039-en",
+      "schedule_index": 156
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0058-en",
+      "schedule_index": 157
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0063-en",
+      "schedule_index": 158
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0047-zh",
+      "schedule_index": 159
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0052-zh",
+      "schedule_index": 160
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0042-zh",
+      "schedule_index": 161
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0043-zh",
+      "schedule_index": 162
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0065-zh",
+      "schedule_index": 163
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0007-en",
+      "schedule_index": 164
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0045-zh",
+      "schedule_index": 165
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0059-zh",
+      "schedule_index": 166
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0039-en",
+      "schedule_index": 167
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0027-zh",
+      "schedule_index": 168
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0072-zh",
+      "schedule_index": 169
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0084-zh",
+      "schedule_index": 170
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0034-zh",
+      "schedule_index": 171
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0078-en",
+      "schedule_index": 172
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0039-zh",
+      "schedule_index": 173
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0038-zh",
+      "schedule_index": 174
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0055-en",
+      "schedule_index": 175
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0047-zh",
+      "schedule_index": 176
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0078-zh",
+      "schedule_index": 177
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0033-en",
+      "schedule_index": 178
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0067-en",
+      "schedule_index": 179
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0075-en",
+      "schedule_index": 180
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0074-zh",
+      "schedule_index": 181
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0088-en",
+      "schedule_index": 182
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0065-zh",
+      "schedule_index": 183
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0034-zh",
+      "schedule_index": 184
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0073-zh",
+      "schedule_index": 185
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0062-zh",
+      "schedule_index": 186
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0059-en",
+      "schedule_index": 187
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0024-zh",
+      "schedule_index": 188
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0087-zh",
+      "schedule_index": 189
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0008-zh",
+      "schedule_index": 190
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0029-zh",
+      "schedule_index": 191
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0024-en",
+      "schedule_index": 192
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0065-zh",
+      "schedule_index": 193
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0060-zh",
+      "schedule_index": 194
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0018-zh",
+      "schedule_index": 195
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0082-zh",
+      "schedule_index": 196
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0047-en",
+      "schedule_index": 197
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0023-en",
+      "schedule_index": 198
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0045-en",
+      "schedule_index": 199
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0045-zh",
+      "schedule_index": 200
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0067-zh",
+      "schedule_index": 201
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0083-en",
+      "schedule_index": 202
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0009-en",
+      "schedule_index": 203
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0068-zh",
+      "schedule_index": 204
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 2,
+      "request_id": "task-0034-en",
+      "schedule_index": 205
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0014-en",
+      "schedule_index": 206
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0019-zh",
+      "schedule_index": 207
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0040-en",
+      "schedule_index": 208
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0009-zh",
+      "schedule_index": 209
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0003-en",
+      "schedule_index": 210
+    },
+    {
+      "initial_arm_order": [
+        "LLM_ONLY",
+        "CONSTRAINT_IN_PROMPT"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0087-en",
+      "schedule_index": 211
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0012-zh",
+      "schedule_index": 212
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0065-en",
+      "schedule_index": 213
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_REPAIR",
+        "VALIDATE_AND_BLIND_RETRY"
+      ],
+      "replicate_id": 3,
+      "request_id": "task-0068-zh",
+      "schedule_index": 214
+    },
+    {
+      "initial_arm_order": [
+        "CONSTRAINT_IN_PROMPT",
+        "LLM_ONLY"
+      ],
+      "repair_policy_order": [
+        "VALIDATE_AND_BLIND_RETRY",
+        "VALIDATE_AND_REPAIR"
+      ],
+      "replicate_id": 1,
+      "request_id": "task-0089-en",
+      "schedule_index": 215
+    }
+  ],
+  "schedule_seed": 20260722,
+  "scheduled_request_ids": [
+    "task-0002-en",
+    "task-0002-zh",
+    "task-0003-en",
+    "task-0003-zh",
+    "task-0004-en",
+    "task-0004-zh",
+    "task-0005-en",
+    "task-0005-zh",
+    "task-0007-en",
+    "task-0007-zh",
+    "task-0008-en",
+    "task-0008-zh",
+    "task-0009-en",
+    "task-0009-zh",
+    "task-0010-en",
+    "task-0010-zh",
+    "task-0012-en",
+    "task-0012-zh",
+    "task-0013-en",
+    "task-0013-zh",
+    "task-0014-en",
+    "task-0014-zh",
+    "task-0015-en",
+    "task-0015-zh",
+    "task-0017-en",
+    "task-0017-zh",
+    "task-0018-en",
+    "task-0018-zh",
+    "task-0019-en",
+    "task-0019-zh",
+    "task-0020-en",
+    "task-0020-zh",
+    "task-0022-en",
+    "task-0022-zh",
+    "task-0023-en",
+    "task-0023-zh",
+    "task-0024-en",
+    "task-0024-zh",
+    "task-0025-en",
+    "task-0025-zh",
+    "task-0027-en",
+    "task-0027-zh",
+    "task-0028-en",
+    "task-0028-zh",
+    "task-0029-en",
+    "task-0029-zh",
+    "task-0030-en",
+    "task-0030-zh",
+    "task-0032-en",
+    "task-0032-zh",
+    "task-0033-en",
+    "task-0033-zh",
+    "task-0034-en",
+    "task-0034-zh",
+    "task-0035-en",
+    "task-0035-zh",
+    "task-0037-en",
+    "task-0037-zh",
+    "task-0038-en",
+    "task-0038-zh",
+    "task-0039-en",
+    "task-0039-zh",
+    "task-0040-en",
+    "task-0040-zh",
+    "task-0042-en",
+    "task-0042-zh",
+    "task-0043-en",
+    "task-0043-zh",
+    "task-0044-en",
+    "task-0044-zh",
+    "task-0045-en",
+    "task-0045-zh",
+    "task-0047-en",
+    "task-0047-zh",
+    "task-0048-en",
+    "task-0048-zh",
+    "task-0049-en",
+    "task-0049-zh",
+    "task-0050-en",
+    "task-0050-zh",
+    "task-0052-en",
+    "task-0052-zh",
+    "task-0053-en",
+    "task-0053-zh",
+    "task-0054-en",
+    "task-0054-zh",
+    "task-0055-en",
+    "task-0055-zh",
+    "task-0057-en",
+    "task-0057-zh",
+    "task-0058-en",
+    "task-0058-zh",
+    "task-0059-en",
+    "task-0059-zh",
+    "task-0060-en",
+    "task-0060-zh",
+    "task-0062-en",
+    "task-0062-zh",
+    "task-0063-en",
+    "task-0063-zh",
+    "task-0064-en",
+    "task-0064-zh",
+    "task-0065-en",
+    "task-0065-zh",
+    "task-0067-en",
+    "task-0067-zh",
+    "task-0068-en",
+    "task-0068-zh",
+    "task-0069-en",
+    "task-0069-zh",
+    "task-0070-en",
+    "task-0070-zh",
+    "task-0072-en",
+    "task-0072-zh",
+    "task-0073-en",
+    "task-0073-zh",
+    "task-0074-en",
+    "task-0074-zh",
+    "task-0075-en",
+    "task-0075-zh",
+    "task-0077-en",
+    "task-0077-zh",
+    "task-0078-en",
+    "task-0078-zh",
+    "task-0079-en",
+    "task-0079-zh",
+    "task-0080-en",
+    "task-0080-zh",
+    "task-0082-en",
+    "task-0082-zh",
+    "task-0083-en",
+    "task-0083-zh",
+    "task-0084-en",
+    "task-0084-zh",
+    "task-0085-en",
+    "task-0085-zh",
+    "task-0087-en",
+    "task-0087-zh",
+    "task-0088-en",
+    "task-0088-zh",
+    "task-0089-en",
+    "task-0089-zh",
+    "task-0090-en",
+    "task-0090-zh"
+  ],
+  "scheduled_seed_ids": [],
+  "schema_hash": "557ca0f3952af90abfa9ce766c40cf3d46c5569921a1da88c6c2d98cdec978ca",
+  "selection_version": "miceplan-lab-formal-selection-v1.2",
+  "source_hashes": {
+    "fault_seeds_composite_v1_2.jsonl": "1aedf6e005beada2833551ed7452e00091168b81cb52791fb149b67f96d7f464",
+    "fault_seeds_v1_2.jsonl": "dd535a8c6846464943cde90a0162c37ba3afa005a82a34149cdccd0966fbc02a",
+    "gold.jsonl": "ea22ad64b6a8e89a03a806b439d849e277317b32453fc46683c1759e557ad9f5",
+    "requests.jsonl": "5699e68d696efb95cb8f27206c689c8f8768306edca0b6e10fea25db10bdfb37"
+  }
+}

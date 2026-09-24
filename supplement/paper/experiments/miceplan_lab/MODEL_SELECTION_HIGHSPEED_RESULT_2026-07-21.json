@@ -1,0 +1,24 @@
+{
+  "access_date": "2026-07-21",
+  "formal_model_frozen": false,
+  "model_id": "kimi-k2.7-code-highspeed",
+  "observed": {
+    "completed_initial_calls": 8,
+    "infrastructure_error_records": 0,
+    "median_latency_ms": 10600.288625000001,
+    "median_total_tokens": 3489.5,
+    "schema_valid_calls": 8,
+    "truncations": 0
+  },
+  "run_directory": "paper/data/miceplan_lab_v1/runs/model-selection-kimi-k27-highspeed-2026-07-21",
+  "selection_gate_pass": true,
+  "selected_for_full_development": true,
+  "thresholds": {
+    "expected_initial_calls": 8,
+    "maximum_infrastructure_error_records": 0,
+    "maximum_median_latency_ms": 24915,
+    "maximum_median_total_tokens": 4199,
+    "required_schema_valid_calls": 8,
+    "maximum_truncations": 0
+  }
+}

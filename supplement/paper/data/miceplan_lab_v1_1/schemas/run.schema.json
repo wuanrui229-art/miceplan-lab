@@ -1,0 +1,63 @@
+{
+  "$id": "https://miceplan-lab.local/schema/run-manifest-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "access_date": {
+      "format": "date",
+      "type": "string"
+    },
+    "dataset_version": {
+      "const": "miceplan-lab-v1.1"
+    },
+    "model_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "prompt_hashes": {
+      "type": "object"
+    },
+    "protocol_version": {
+      "const": "1.2"
+    },
+    "provider": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "replicate_ids": {
+      "items": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "type": "array"
+    },
+    "run_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scheduled_request_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "schema_hash": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "protocol_version",
+    "dataset_version",
+    "model_id",
+    "provider",
+    "access_date",
+    "prompt_hashes",
+    "schema_hash",
+    "scheduled_request_ids",
+    "replicate_ids"
+  ],
+  "title": "MICEPlan-Lab Run Manifest",
+  "type": "object"
+}

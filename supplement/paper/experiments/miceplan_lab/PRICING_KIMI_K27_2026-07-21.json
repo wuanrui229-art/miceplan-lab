@@ -1,0 +1,13 @@
+{
+  "access_date": "2026-07-21",
+  "billing_unit_tokens": 1000000,
+  "currency": "USD",
+  "model_id": "kimi-k2.7-code",
+  "prices_per_million_tokens": {
+    "cache_hit_input": 0.19,
+    "cache_miss_input": 0.95,
+    "output": 4.0
+  },
+  "source": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+  "tax_included": false
+}

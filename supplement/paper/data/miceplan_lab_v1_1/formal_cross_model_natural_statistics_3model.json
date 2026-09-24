@@ -1,0 +1,441 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 10000,
+    "models": [
+      "kimi",
+      "deepseek",
+      "openai_gpt_5_6_sol"
+    ],
+    "paired_jobs": 216,
+    "pairwise_difference_direction": "second model effect minus first model effect",
+    "semantic_task_clusters": 72
+  },
+  "comparisons": {
+    "constraint_prompt_minus_llm_only": {
+      "over_defer": {
+        "model_effects": {
+          "deepseek": 0.0,
+          "kimi": -0.0787037037037037,
+          "openai_gpt_5_6_sol": -0.037037037037037035
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0196078431372549,
+              0.1383002469604863
+            ],
+            "effect_difference": 0.0787037037037037
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.08173076923076923,
+              0.0
+            ],
+            "effect_difference": -0.037037037037037035
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.0204187925170068,
+              0.10377358490566037
+            ],
+            "effect_difference": 0.04166666666666667
+          }
+        }
+      },
+      "rule_invalid_exposure": {
+        "model_effects": {
+          "deepseek": 0.06481481481481481,
+          "kimi": -0.013888888888888888,
+          "openai_gpt_5_6_sol": -0.004629629629629629
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.031818181818181815,
+              0.13157894736842105
+            ],
+            "effect_difference": 0.07870370370370369
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.11607912561576354,
+              -0.02830188679245283
+            ],
+            "effect_difference": -0.06944444444444445
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.008928571428571428,
+              0.02830188679245283
+            ],
+            "effect_difference": 0.009259259259259259
+          }
+        }
+      },
+      "safe_resolution": {
+        "model_effects": {
+          "deepseek": 0.10185185185185185,
+          "kimi": 0.12037037037037036,
+          "openai_gpt_5_6_sol": 0.06018518518518518
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.09375,
+              0.05555555555555555
+            ],
+            "effect_difference": -0.018518518518518517
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.09615384615384615,
+              0.013636363636363627
+            ],
+            "effect_difference": -0.041666666666666664
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.1276972517730496,
+              0.005437801932367116
+            ],
+            "effect_difference": -0.06018518518518518
+          }
+        }
+      },
+      "safe_task_success": {
+        "model_effects": {
+          "deepseek": 0.09259259259259259,
+          "kimi": 0.10648148148148148,
+          "openai_gpt_5_6_sol": 0.05555555555555555
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.08333333333333333,
+              0.054545454545454536
+            ],
+            "effect_difference": -0.013888888888888895
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.08962264150943397,
+              0.016133415147265014
+            ],
+            "effect_difference": -0.037037037037037035
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.11637931034482758,
+              0.014423076923076913
+            ],
+            "effect_difference": -0.05092592592592593
+          }
+        }
+      },
+      "unsafe_exposure": {
+        "model_effects": {
+          "deepseek": -0.10185185185185185,
+          "kimi": -0.041666666666666664,
+          "openai_gpt_5_6_sol": -0.023148148148148147
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.1509433962264151,
+              0.02659574468085106
+            ],
+            "effect_difference": -0.06018518518518518
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.018518518518518517,
+              0.14150943396226415
+            ],
+            "effect_difference": 0.07870370370370369
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.0459278155706727,
+              0.08333333333333333
+            ],
+            "effect_difference": 0.018518518518518517
+          }
+        }
+      }
+    },
+    "rule_repair_minus_blind_retry": {
+      "over_defer": {
+        "model_effects": {
+          "deepseek": -0.004629629629629629,
+          "kimi": 0.0,
+          "openai_gpt_5_6_sol": 0.0
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.014423076923076924,
+              0.0
+            ],
+            "effect_difference": -0.004629629629629629
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.014423076923076924
+            ],
+            "effect_difference": 0.004629629629629629
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          }
+        }
+      },
+      "safe_resolution": {
+        "model_effects": {
+          "deepseek": 0.004629629629629629,
+          "kimi": 0.0,
+          "openai_gpt_5_6_sol": 0.0
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.014705882352941176
+            ],
+            "effect_difference": 0.004629629629629629
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.014705882352941176,
+              0.0
+            ],
+            "effect_difference": -0.004629629629629629
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          }
+        }
+      },
+      "safe_task_success": {
+        "model_effects": {
+          "deepseek": 0.004629629629629629,
+          "kimi": 0.0,
+          "openai_gpt_5_6_sol": 0.0
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.014705882352941176
+            ],
+            "effect_difference": 0.004629629629629629
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.015,
+              0.0
+            ],
+            "effect_difference": -0.004629629629629629
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          }
+        }
+      },
+      "unsafe_exposure": {
+        "model_effects": {
+          "deepseek": 0.0,
+          "kimi": 0.0,
+          "openai_gpt_5_6_sol": 0.0
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          }
+        }
+      }
+    },
+    "validate_block_minus_llm_only": {
+      "over_defer": {
+        "model_effects": {
+          "deepseek": 0.6851851851851852,
+          "kimi": 0.05092592592592592,
+          "openai_gpt_5_6_sol": 0.013888888888888888
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.5267857142857143,
+              0.7361111111111112
+            ],
+            "effect_difference": 0.6342592592592593
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              -0.7772727272727272,
+              -0.5614014399205561
+            ],
+            "effect_difference": -0.6712962962962964
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.07065217391304349,
+              -0.00892857142857143
+            ],
+            "effect_difference": -0.037037037037037035
+          }
+        }
+      },
+      "rule_invalid_exposure": {
+        "model_effects": {
+          "deepseek": -0.041666666666666664,
+          "kimi": -0.018518518518518517,
+          "openai_gpt_5_6_sol": -0.004629629629629629
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.05092592592592593,
+              0.0
+            ],
+            "effect_difference": -0.023148148148148147
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.013157894736842105,
+              0.06696428571428573
+            ],
+            "effect_difference": 0.037037037037037035
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.031818181818181815
+            ],
+            "effect_difference": 0.013888888888888888
+          }
+        }
+      },
+      "safe_resolution": {
+        "model_effects": {
+          "deepseek": 0.0,
+          "kimi": 0.0,
+          "openai_gpt_5_6_sol": 0.0
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          }
+        }
+      },
+      "safe_task_success": {
+        "model_effects": {
+          "deepseek": 0.0,
+          "kimi": 0.0,
+          "openai_gpt_5_6_sol": 0.0
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.0,
+              0.0
+            ],
+            "effect_difference": 0.0
+          }
+        }
+      },
+      "unsafe_exposure": {
+        "model_effects": {
+          "deepseek": -0.6851851851851852,
+          "kimi": -0.05555555555555555,
+          "openai_gpt_5_6_sol": -0.013888888888888888
+        },
+        "pairwise_effect_differences": {
+          "deepseek_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              -0.735576923076923,
+              -0.5227272727272727
+            ],
+            "effect_difference": -0.6296296296296297
+          },
+          "openai_gpt_5_6_sol_minus_deepseek": {
+            "cluster_bootstrap_95_ci": [
+              0.5648148148148149,
+              0.7755190007037297
+            ],
+            "effect_difference": 0.6712962962962964
+          },
+          "openai_gpt_5_6_sol_minus_kimi": {
+            "cluster_bootstrap_95_ci": [
+              0.012931034482758622,
+              0.075
+            ],
+            "effect_difference": 0.041666666666666664
+          }
+        }
+      }
+    }
+  }
+}

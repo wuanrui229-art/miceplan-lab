@@ -1,0 +1,136 @@
+{
+  "author_review_status": "PASS",
+  "created_date": "2026-07-20",
+  "dataset": "miceplan-lab-v1.1",
+  "files": {
+    "AUTHOR_REVIEW_PACKET.md": {
+      "bytes": 55735,
+      "sha256": "6271a4998077d1b1748201e85940579120406fb0ee6d45b2c7320a5900e6cb0f"
+    },
+    "audit_report.json": {
+      "bytes": 1272,
+      "sha256": "b5d60f8d57c23f19e897f6af8ece598404c46d271fbfdc2c62b1c5a0d7a59933"
+    },
+    "base_generation.txt": {
+      "bytes": 1148,
+      "sha256": "5ee387e631ba828865077527c7fa1fee95165026ce8e0baa31b582baacaa24fd"
+    },
+    "blind_retry.txt": {
+      "bytes": 697,
+      "sha256": "a7a7df21cc67764479802dc06f24f0623a81b61bd934f048958abe01bcef0136"
+    },
+    "constraint_generation.txt": {
+      "bytes": 1634,
+      "sha256": "937cebf8bb25e1450fe4d8c9723f2bd89290bb51a13a26fa003ec007572eb82a"
+    },
+    "gold.jsonl": {
+      "bytes": 111676,
+      "sha256": "ea22ad64b6a8e89a03a806b439d849e277317b32453fc46683c1759e557ad9f5"
+    },
+    "gold.schema.json": {
+      "bytes": 11802,
+      "sha256": "5281a0892f82ecd7584cd3c49ba75b853ba3a6e165989706b4ae3ba4d1ad9453"
+    },
+    "layout-edit-ir.schema.json": {
+      "bytes": 3146,
+      "sha256": "557ca0f3952af90abfa9ce766c40cf3d46c5569921a1da88c6c2d98cdec978ca"
+    },
+    "repair.txt": {
+      "bytes": 1059,
+      "sha256": "efff1ebdaf359bfe55c8b6b46e862c9b06e91fab141f196a14b066beda1729fc"
+    },
+    "request.schema.json": {
+      "bytes": 1666,
+      "sha256": "284e66264253ce6b2fdeb4a4edbd3c4bf4cbc36c24fd4d6b012e9c6010b82822"
+    },
+    "requests.jsonl": {
+      "bytes": 66680,
+      "sha256": "5699e68d696efb95cb8f27206c689c8f8768306edca0b6e10fea25db10bdfb37"
+    },
+    "review_status.json": {
+      "bytes": 332,
+      "sha256": "31855bfaaf76a6f420d207006955574ade8f8ecf77c3255d332d33ec8acb0cc9"
+    },
+    "run.schema.json": {
+      "bytes": 1234,
+      "sha256": "ba35392150f0cceae2945984c457b1d129e3582f6bad9376493b7411caa22d40"
+    },
+    "scene.schema.json": {
+      "bytes": 5271,
+      "sha256": "9f979aeac235ddf448f78fc61607c2ddffc4650e28785c735b8698de7c712d8d"
+    },
+    "scenes.jsonl": {
+      "bytes": 19760,
+      "sha256": "06cc42dd4f79a748f4c2ed8da601bab44678f60b6573e5fbc3d40adf3f4a1f13"
+    },
+    "surface_review.json": {
+      "bytes": 997,
+      "sha256": "3b790b0f37f0bee9a8a3bcc0dd230065fc30db96668aec37cee01811e104f630"
+    }
+  },
+  "formal_model_calls_started": true,
+  "formal_run_initializations": [
+    {
+      "initialized_at": "2026-07-22T09:31:14.676+00:00",
+      "provider": "kimi",
+      "run_id": "formal-natural-kimi-v1-2",
+      "track": "natural"
+    },
+    {
+      "initialized_at": "2026-07-23T09:15:21.167+00:00",
+      "provider": "kimi",
+      "run_id": "formal-seeded-kimi-v1-2",
+      "track": "seeded"
+    },
+    {
+      "initialized_at": "2026-07-23T18:20:41.501+00:00",
+      "provider": "deepseek",
+      "run_id": "formal-natural-deepseek-v1-2",
+      "track": "natural"
+    },
+    {
+      "initialized_at": "2026-07-24T06:21:29.939+00:00",
+      "provider": "deepseek",
+      "run_id": "formal-seeded-deepseek-v1-2",
+      "track": "seeded"
+    },
+    {
+      "initialized_at": "2026-09-01T17:37:45.490+00:00",
+      "provider": "openai",
+      "run_id": "formal-natural-openai-v1-2-extension",
+      "track": "natural"
+    },
+    {
+      "initialized_at": "2026-09-01T19:32:02.129+00:00",
+      "provider": "openai",
+      "run_id": "formal-seeded-openai-v1-2-extension",
+      "track": "seeded"
+    }
+  ],
+  "generator_version": "miceplan-lab-generator-v1.1",
+  "machine_audit_status": "PASS",
+  "oracle_version": "miceplan-lab-shapely-oracle-v1.0",
+  "protocol_version": "1.2",
+  "request_count": 180,
+  "request_split": {
+    "development": 36,
+    "test": 144
+  },
+  "scene_count": 8,
+  "scene_split": {
+    "development": 2,
+    "test": 6
+  },
+  "seed": 20260720,
+  "semantic_task_count": 90,
+  "surface_review_status": "PASS",
+  "test_stress_strata": {
+    "AMBIGUOUS_TARGET": 9,
+    "BOUNDARY": 9,
+    "FEASIBLE_CONTROL": 18,
+    "LOCKED_MUTATION": 9,
+    "MISSING_EVIDENCE": 9,
+    "OVERLAP": 9,
+    "PROTECTED_POLYGON": 9
+  }
+}

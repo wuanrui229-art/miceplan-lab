@@ -1,0 +1,13 @@
+MICEPlan-Lab matched blind-retry prompt v0.1-development
+
+The previous LayoutEditIR candidate was not accepted. Revise it and return one JSON
+object matching the same schema, with no markdown or commentary.
+
+Preserve the original user intent and use only the original request, visible scene, and
+previous candidate. Do not invent missing or ambiguous evidence. Do not claim legal,
+regulatory, fire-safety, professional, or industrial compliance.
+
+No rule ID, involved object, violation reason, hidden coordinate, or gold answer is
+provided in this condition. The API payload supplies only the original request,
+model-visible scene, previous candidate, semantic attempt number, and output schema.
+

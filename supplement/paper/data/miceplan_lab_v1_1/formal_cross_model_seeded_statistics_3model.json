@@ -1,0 +1,76 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 10000,
+    "effect": "rule_feedback_minus_blind_retry",
+    "models": [
+      "kimi",
+      "deepseek",
+      "openai_gpt_5_6_sol"
+    ],
+    "paired_cases": 210,
+    "pairwise_interaction_direction": "second model effect minus first model effect",
+    "unique_semantic_task_clusters": 36
+  },
+  "results": {
+    "recovery_at_1": {
+      "model_effects": {
+        "deepseek": -0.023809523809523808,
+        "kimi": -0.02857142857142857,
+        "openai_gpt_5_6_sol": 0.5619047619047619
+      },
+      "pairwise_interactions": {
+        "deepseek_minus_kimi": {
+          "effect_difference": 0.004761904761904762,
+          "semantic_task_cluster_bootstrap_95_ci": [
+            -0.10824742268041238,
+            0.11340791940018735
+          ]
+        },
+        "openai_gpt_5_6_sol_minus_deepseek": {
+          "effect_difference": 0.5857142857142857,
+          "semantic_task_cluster_bootstrap_95_ci": [
+            0.4587146485707787,
+            0.7083434466019416
+          ]
+        },
+        "openai_gpt_5_6_sol_minus_kimi": {
+          "effect_difference": 0.5904761904761905,
+          "semantic_task_cluster_bootstrap_95_ci": [
+            0.48660714285714285,
+            0.6923076923076923
+          ]
+        }
+      }
+    },
+    "recovery_at_3": {
+      "model_effects": {
+        "deepseek": 0.014285714285714285,
+        "kimi": -0.02857142857142857,
+        "openai_gpt_5_6_sol": 0.5619047619047619
+      },
+      "pairwise_interactions": {
+        "deepseek_minus_kimi": {
+          "effect_difference": 0.04285714285714286,
+          "semantic_task_cluster_bootstrap_95_ci": [
+            -0.05,
+            0.1336206896551724
+          ]
+        },
+        "openai_gpt_5_6_sol_minus_deepseek": {
+          "effect_difference": 0.5476190476190477,
+          "semantic_task_cluster_bootstrap_95_ci": [
+            0.41890790246768506,
+            0.6682692307692307
+          ]
+        },
+        "openai_gpt_5_6_sol_minus_kimi": {
+          "effect_difference": 0.5904761904761905,
+          "semantic_task_cluster_bootstrap_95_ci": [
+            0.4836911729574773,
+            0.696969696969697
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "$id": "https://miceplan-lab.local/schema/request-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "complexity": {
+      "enum": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "context_mask": {
+      "additionalProperties": false,
+      "properties": {
+        "hide_disambiguating_labels": {
+          "type": "boolean"
+        },
+        "hide_scale": {
+          "type": "boolean"
+        },
+        "hide_unit": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "hide_unit",
+        "hide_scale",
+        "hide_disambiguating_labels"
+      ],
+      "type": "object"
+    },
+    "language": {
+      "enum": [
+        "zh",
+        "en"
+      ]
+    },
+    "operation_family": {
+      "enum": [
+        "ADD_BOOTH",
+        "MOVE_BOOTH",
+        "RESIZE_BOOTH",
+        "REMOVE_BOOTH",
+        "SPLIT_BOOTH",
+        "RESERVE_AISLE"
+      ]
+    },
+    "pair_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "request_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "semantic_task_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "development",
+        "test"
+      ]
+    },
+    "text": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "request_id",
+    "semantic_task_id",
+    "split",
+    "scene_id",
+    "language",
+    "text",
+    "operation_family",
+    "complexity",
+    "pair_id",
+    "context_mask"
+  ],
+  "title": "MICEPlan-Lab Request",
+  "type": "object"
+}

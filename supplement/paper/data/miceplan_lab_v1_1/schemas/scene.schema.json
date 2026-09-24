@@ -1,0 +1,253 @@
+{
+  "$id": "https://miceplan-lab.local/schema/scene-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "booths": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "height": {
+            "exclusiveMinimum": 0,
+            "type": "number"
+          },
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "number": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "available",
+              "reserved",
+              "sold",
+              "locked"
+            ]
+          },
+          "type": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "width": {
+            "exclusiveMinimum": 0,
+            "type": "number"
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "number",
+          "x",
+          "y",
+          "width",
+          "height",
+          "status",
+          "type"
+        ],
+        "type": "object"
+      },
+      "minItems": 6,
+      "type": "array"
+    },
+    "boundary": {
+      "items": {
+        "items": false,
+        "maxItems": 2,
+        "minItems": 2,
+        "prefixItems": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "minItems": 3,
+      "type": "array"
+    },
+    "complexity_features": {
+      "additionalProperties": false,
+      "properties": {
+        "booth_count": {
+          "minimum": 6,
+          "type": "integer"
+        },
+        "boundary_vertices": {
+          "minimum": 4,
+          "type": "integer"
+        },
+        "protected_polygon_count": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "boundary_vertices",
+        "booth_count",
+        "protected_polygon_count"
+      ],
+      "type": "object"
+    },
+    "exits": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "polygon": {
+            "items": {
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "minItems": 3,
+            "type": "array"
+          },
+          "type": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "polygon"
+        ],
+        "type": "object"
+      },
+      "minItems": 2,
+      "type": "array"
+    },
+    "fixed_aisles": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "polygon": {
+            "items": {
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "minItems": 3,
+            "type": "array"
+          },
+          "type": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "polygon"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "obstacles": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "polygon": {
+            "items": {
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            "minItems": 3,
+            "type": "array"
+          },
+          "type": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "polygon"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "scene_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "development",
+        "test"
+      ]
+    },
+    "unit": {
+      "const": "m"
+    },
+    "version": {
+      "const": "v1"
+    }
+  },
+  "required": [
+    "scene_id",
+    "split",
+    "version",
+    "unit",
+    "boundary",
+    "booths",
+    "obstacles",
+    "fixed_aisles",
+    "exits",
+    "complexity_features"
+  ],
+  "title": "MICEPlan-Lab Scene",
+  "type": "object"
+}

@@ -1,0 +1,381 @@
+{
+  "actual_unique_cost_usd": 3.8833968,
+  "actual_unique_usage": {
+    "cache_write_tokens": 499390,
+    "cached_tokens": 286007,
+    "completion_tokens": 63349,
+    "prompt_tokens": 786663,
+    "total_tokens": 850012
+  },
+  "completion": {
+    "expected_policy_outcomes": 630,
+    "gate_events": 1052,
+    "heldout_request_ids_observed": [
+      "task-0003-en",
+      "task-0003-zh",
+      "task-0004-en",
+      "task-0004-zh",
+      "task-0007-en",
+      "task-0007-zh",
+      "task-0008-en",
+      "task-0008-zh",
+      "task-0009-en",
+      "task-0009-zh",
+      "task-0012-en",
+      "task-0012-zh",
+      "task-0013-en",
+      "task-0013-zh",
+      "task-0014-en",
+      "task-0014-zh",
+      "task-0018-en",
+      "task-0018-zh",
+      "task-0019-en",
+      "task-0019-zh",
+      "task-0022-en",
+      "task-0022-zh",
+      "task-0023-en",
+      "task-0023-zh",
+      "task-0024-en",
+      "task-0024-zh",
+      "task-0027-en",
+      "task-0027-zh",
+      "task-0028-en",
+      "task-0028-zh",
+      "task-0029-en",
+      "task-0029-zh",
+      "task-0030-en",
+      "task-0030-zh",
+      "task-0062-en",
+      "task-0062-zh",
+      "task-0063-en",
+      "task-0063-zh",
+      "task-0064-en",
+      "task-0064-zh",
+      "task-0067-en",
+      "task-0067-zh",
+      "task-0068-en",
+      "task-0068-zh",
+      "task-0069-en",
+      "task-0069-zh",
+      "task-0072-en",
+      "task-0072-zh",
+      "task-0073-en",
+      "task-0073-zh",
+      "task-0074-en",
+      "task-0074-zh",
+      "task-0075-en",
+      "task-0075-zh",
+      "task-0077-en",
+      "task-0077-zh",
+      "task-0078-en",
+      "task-0078-zh",
+      "task-0079-en",
+      "task-0079-zh",
+      "task-0082-en",
+      "task-0082-zh",
+      "task-0083-en",
+      "task-0083-zh",
+      "task-0084-en",
+      "task-0084-zh",
+      "task-0087-en",
+      "task-0087-zh",
+      "task-0088-en",
+      "task-0088-zh",
+      "task-0089-en",
+      "task-0089-zh"
+    ],
+    "heldout_seed_ids_observed": [
+      "seed-task-0003-boundary+overlap",
+      "seed-task-0003-protected_polygon",
+      "seed-task-0004-boundary+protected_polygon",
+      "seed-task-0004-protected_polygon",
+      "seed-task-0007-boundary+overlap",
+      "seed-task-0007-overlap",
+      "seed-task-0008-overlap+protected_polygon",
+      "seed-task-0008-protected_polygon",
+      "seed-task-0009-overlap+protected_polygon",
+      "seed-task-0009-protected_polygon",
+      "seed-task-0012-boundary+overlap",
+      "seed-task-0012-overlap",
+      "seed-task-0013-boundary+protected_polygon",
+      "seed-task-0013-overlap",
+      "seed-task-0014-boundary+protected_polygon",
+      "seed-task-0014-protected_polygon",
+      "seed-task-0018-overlap+protected_polygon",
+      "seed-task-0018-protected_polygon",
+      "seed-task-0019-overlap+protected_polygon",
+      "seed-task-0019-protected_polygon",
+      "seed-task-0022-boundary",
+      "seed-task-0022-boundary+protected_polygon",
+      "seed-task-0023-boundary+overlap",
+      "seed-task-0023-overlap",
+      "seed-task-0024-boundary+overlap",
+      "seed-task-0024-overlap",
+      "seed-task-0027-boundary+protected_polygon",
+      "seed-task-0027-protected_polygon",
+      "seed-task-0028-boundary+protected_polygon",
+      "seed-task-0028-overlap",
+      "seed-task-0029-boundary+overlap",
+      "seed-task-0029-overlap",
+      "seed-task-0030-boundary+overlap",
+      "seed-task-0030-overlap",
+      "seed-task-0062-boundary",
+      "seed-task-0062-overlap+protected_polygon",
+      "seed-task-0063-boundary+protected_polygon",
+      "seed-task-0063-overlap",
+      "seed-task-0064-boundary",
+      "seed-task-0064-overlap+protected_polygon",
+      "seed-task-0067-overlap",
+      "seed-task-0067-overlap+protected_polygon",
+      "seed-task-0068-boundary+overlap",
+      "seed-task-0068-overlap",
+      "seed-task-0069-overlap+protected_polygon",
+      "seed-task-0069-protected_polygon",
+      "seed-task-0072-boundary+protected_polygon",
+      "seed-task-0072-protected_polygon",
+      "seed-task-0073-boundary+protected_polygon",
+      "seed-task-0073-protected_polygon",
+      "seed-task-0074-boundary",
+      "seed-task-0074-boundary+overlap",
+      "seed-task-0075-overlap",
+      "seed-task-0075-overlap+protected_polygon",
+      "seed-task-0077-boundary",
+      "seed-task-0078-boundary",
+      "seed-task-0079-boundary",
+      "seed-task-0082-boundary",
+      "seed-task-0083-boundary",
+      "seed-task-0084-boundary",
+      "seed-task-0087-boundary",
+      "seed-task-0088-boundary",
+      "seed-task-0089-boundary"
+    ],
+    "infrastructure_error_records": 0,
+    "recorded_policy_outcomes": 630,
+    "scheduled_jobs": 210,
+    "unique_model_calls": 422
+  },
+  "experiment_track": "formal_seeded_conditional_recovery",
+  "feedback_isolation_audit": {
+    "blind_retry_calls": 211,
+    "rule_feedback_calls": 211,
+    "rule_feedback_payloads_match_prompt": true
+  },
+  "initial_seed_audit": {
+    "all_initial_candidates_fail": true,
+    "all_initial_candidates_preserve_intent_signature": true,
+    "all_initial_rule_sets_match_declared_seed_rule": true
+  },
+  "model_quality": {
+    "infrastructure_retry_count": 10,
+    "length_truncations": 0,
+    "schema_valid_calls": 422
+  },
+  "paired_rule_vs_blind": {
+    "blind_retry_only_succeeded": 3,
+    "both_succeeded": 45,
+    "median_attempt_difference_rule_minus_blind": 0.0,
+    "neither_succeeded": 41,
+    "paired_cases": 210,
+    "rule_feedback_only_succeeded": 121
+  },
+  "policies": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "conceptual_policy_cost_usd": 1.898441,
+      "final_actions": {
+        "DEFER": 162,
+        "EXPOSE": 48
+      },
+      "mean_model_calls": 1.0047619047619047,
+      "median_total_latency_ms": 6905.2870415,
+      "n": 210,
+      "safe_task_success_rate": 0.22857142857142856,
+      "safe_task_successes": 48,
+      "semantic_attempts": {
+        "1": 209,
+        "2": 1
+      },
+      "usage": {
+        "cache_write_tokens": 236737,
+        "cached_tokens": 141360,
+        "completion_tokens": 32784,
+        "prompt_tokens": 378730,
+        "total_tokens": 411514
+      }
+    },
+    "SEEDED_VALIDATE_AND_BLOCK": {
+      "conceptual_policy_cost_usd": 0.0,
+      "final_actions": {
+        "BLOCK": 210
+      },
+      "mean_model_calls": 0.0,
+      "median_total_latency_ms": 0.0,
+      "n": 210,
+      "safe_task_success_rate": 0.0,
+      "safe_task_successes": 0,
+      "semantic_attempts": {
+        "0": 210
+      },
+      "usage": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "completion_tokens": 0,
+        "prompt_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "conceptual_policy_cost_usd": 1.9849558,
+      "final_actions": {
+        "DEFER": 38,
+        "EXPOSE": 172
+      },
+      "mean_model_calls": 1.0047619047619047,
+      "median_total_latency_ms": 6964.229042,
+      "n": 210,
+      "safe_task_success_rate": 0.7904761904761904,
+      "safe_task_successes": 166,
+      "semantic_attempts": {
+        "1": 209,
+        "2": 1
+      },
+      "usage": {
+        "cache_write_tokens": 262653,
+        "cached_tokens": 144647,
+        "completion_tokens": 30565,
+        "prompt_tokens": 407933,
+        "total_tokens": 438498
+      }
+    }
+  },
+  "pricing": {
+    "access_date": "2026-09-01",
+    "billing_unit_tokens": 1000000,
+    "currency": "USD",
+    "model_id": "gpt-5.6-sol",
+    "prices_per_million_tokens": {
+      "cache_hit_input": 0.4,
+      "cache_miss_input": 4.0,
+      "cache_write_input": 5.0,
+      "output": 20.0
+    },
+    "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+    "tax_included": false
+  },
+  "recovery": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "1": {
+        "entered": 210,
+        "marginal_recovery_rate": 0.22380952380952382,
+        "newly_recovered": 47,
+        "recovery_at_k": 0.22380952380952382
+      },
+      "2": {
+        "entered": 1,
+        "marginal_recovery_rate": 1.0,
+        "newly_recovered": 1,
+        "recovery_at_k": 0.22857142857142856
+      },
+      "3": {
+        "entered": 0,
+        "marginal_recovery_rate": null,
+        "newly_recovered": 0,
+        "recovery_at_k": 0.22857142857142856
+      }
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "1": {
+        "entered": 210,
+        "marginal_recovery_rate": 0.7857142857142857,
+        "newly_recovered": 165,
+        "recovery_at_k": 0.7857142857142857
+      },
+      "2": {
+        "entered": 1,
+        "marginal_recovery_rate": 1.0,
+        "newly_recovered": 1,
+        "recovery_at_k": 0.7904761904761904
+      },
+      "3": {
+        "entered": 0,
+        "marginal_recovery_rate": null,
+        "newly_recovered": 0,
+        "recovery_at_k": 0.7904761904761904
+      }
+    }
+  },
+  "rule_strata": {
+    "BOUNDARY": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 46,
+        "safe_task_success_rate": 0.13043478260869565,
+        "safe_task_successes": 6
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 46,
+        "safe_task_success_rate": 0.6956521739130435,
+        "safe_task_successes": 32
+      }
+    },
+    "BOUNDARY+OVERLAP": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 26,
+        "safe_task_success_rate": 0.3076923076923077,
+        "safe_task_successes": 8
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 26,
+        "safe_task_success_rate": 0.8846153846153846,
+        "safe_task_successes": 23
+      }
+    },
+    "BOUNDARY+PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 30,
+        "safe_task_success_rate": 0.23333333333333334,
+        "safe_task_successes": 7
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 30,
+        "safe_task_success_rate": 0.9,
+        "safe_task_successes": 27
+      }
+    },
+    "OVERLAP": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 40,
+        "safe_task_success_rate": 0.225,
+        "safe_task_successes": 9
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 40,
+        "safe_task_success_rate": 0.75,
+        "safe_task_successes": 30
+      }
+    },
+    "OVERLAP+PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 34,
+        "safe_task_success_rate": 0.29411764705882354,
+        "safe_task_successes": 10
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 34,
+        "safe_task_success_rate": 0.9411764705882353,
+        "safe_task_successes": 32
+      }
+    },
+    "PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 34,
+        "safe_task_success_rate": 0.23529411764705882,
+        "safe_task_successes": 8
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 34,
+        "safe_task_success_rate": 0.6470588235294118,
+        "safe_task_successes": 22
+      }
+    }
+  },
+  "run_id": "formal-seeded-openai-v1-2-extension"
+}

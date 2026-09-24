@@ -1,0 +1,139 @@
+{
+  "analysis": "post-review executable-job deferral decomposition",
+  "bootstrap_replicates": 10000,
+  "bootstrap_unit": "semantic_task_id",
+  "models": {
+    "Kimi": {
+      "run_name": "formal-natural-kimi-v1-2",
+      "paired_jobs": 216,
+      "feasible_jobs": 176,
+      "feasible_semantic_task_clusters": 54,
+      "llm_only_deferrals": 39,
+      "validate_and_block_deferrals": 43,
+      "added_feasible_deferrals": 4,
+      "llm_only_rate": 0.2215909090909091,
+      "validate_and_block_rate": 0.24431818181818182,
+      "paired_change": 0.022727272727272728,
+      "cluster_bootstrap_95_ci": [
+        0.005555555555555556,
+        0.043478260869565216
+      ],
+      "strict_new_deferrals_by_gold_outcome": {
+        "DEFER": 7,
+        "VALID_EDIT": 4
+      },
+      "unknown_sources": {
+        "model_explicit_clarification": 72,
+        "validator_added_unknown": 11
+      },
+      "validator_added_unknown_by_gold_outcome": {
+        "DEFER": 7,
+        "VALID_EDIT": 4
+      },
+      "unknown_gate_issue_codes": {
+        "aisle_evidence_missing": 2,
+        "model_requested_clarification": 72,
+        "placement_evidence_missing": 2,
+        "scale_or_unit_masked": 7
+      }
+    },
+    "DeepSeek": {
+      "run_name": "formal-natural-deepseek-v1-2",
+      "paired_jobs": 216,
+      "feasible_jobs": 176,
+      "feasible_semantic_task_clusters": 54,
+      "llm_only_deferrals": 0,
+      "validate_and_block_deferrals": 110,
+      "added_feasible_deferrals": 110,
+      "llm_only_rate": 0.0,
+      "validate_and_block_rate": 0.625,
+      "paired_change": 0.625,
+      "cluster_bootstrap_95_ci": [
+        0.4941860465116279,
+        0.75
+      ],
+      "strict_new_deferrals_by_gold_outcome": {
+        "DEFER": 38,
+        "VALID_EDIT": 110
+      },
+      "unknown_sources": {
+        "model_explicit_clarification": 2,
+        "validator_added_unknown": 148
+      },
+      "validator_added_unknown_by_gold_outcome": {
+        "DEFER": 38,
+        "VALID_EDIT": 110
+      },
+      "unknown_gate_issue_codes": {
+        "aisle_evidence_missing": 28,
+        "missing_ir": 3,
+        "model_requested_clarification": 2,
+        "placement_evidence_missing": 48,
+        "position_missing": 28,
+        "scale_or_unit_masked": 18,
+        "target_evidence_masked": 19,
+        "target_not_found": 4
+      }
+    },
+    "OpenAI": {
+      "run_name": "formal-natural-openai-v1-2-extension",
+      "paired_jobs": 216,
+      "feasible_jobs": 176,
+      "feasible_semantic_task_clusters": 54,
+      "llm_only_deferrals": 104,
+      "validate_and_block_deferrals": 106,
+      "added_feasible_deferrals": 2,
+      "llm_only_rate": 0.5909090909090909,
+      "validate_and_block_rate": 0.6022727272727273,
+      "paired_change": 0.011363636363636364,
+      "cluster_bootstrap_95_ci": [
+        0.0,
+        0.028409090909090908
+      ],
+      "strict_new_deferrals_by_gold_outcome": {
+        "DEFER": 1,
+        "VALID_EDIT": 2
+      },
+      "unknown_sources": {
+        "model_explicit_clarification": 143,
+        "validator_added_unknown": 3
+      },
+      "validator_added_unknown_by_gold_outcome": {
+        "DEFER": 1,
+        "VALID_EDIT": 2
+      },
+      "unknown_gate_issue_codes": {
+        "aisle_evidence_missing": 1,
+        "model_requested_clarification": 143,
+        "placement_evidence_missing": 1,
+        "scale_or_unit_masked": 1
+      }
+    }
+  },
+  "cross_model_interactions": {
+    "DeepSeek_minus_Kimi": {
+      "paired_feasible_jobs": 176,
+      "interaction": 0.6022727272727273,
+      "cluster_bootstrap_95_ci": [
+        0.4772727272727273,
+        0.7205882352941176
+      ]
+    },
+    "OpenAI_minus_Kimi": {
+      "paired_feasible_jobs": 176,
+      "interaction": -0.011363636363636364,
+      "cluster_bootstrap_95_ci": [
+        -0.03333333333333333,
+        0.010869565217391304
+      ]
+    },
+    "OpenAI_minus_DeepSeek": {
+      "paired_feasible_jobs": 176,
+      "interaction": -0.6136363636363636,
+      "cluster_bootstrap_95_ci": [
+        -0.7364864864864865,
+        -0.485
+      ]
+    }
+  }
+}

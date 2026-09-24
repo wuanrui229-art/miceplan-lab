@@ -1,0 +1,43 @@
+{
+  "formal_model_frozen": false,
+  "models": [
+    {
+      "expected_initial_calls": 8,
+      "infrastructure_error_records": 1,
+      "median_latency_ms": null,
+      "median_total_tokens": null,
+      "model_id": "kimi-k3",
+      "recorded_initial_calls": 0,
+      "request_ids": [
+        "task-0001-en",
+        "task-0021-zh",
+        "task-0036-en",
+        "task-0086-zh"
+      ],
+      "run_directory": "paper/data/miceplan_lab_v1/runs/model-selection-kimi-k3-low-2026-07-21",
+      "schema_valid_rate": 0.0,
+      "selection_gate_pass": false,
+      "truncation_rate": 0.0
+    },
+    {
+      "expected_initial_calls": 8,
+      "infrastructure_error_records": 0,
+      "median_latency_ms": 49830.5614585,
+      "median_total_tokens": 3359.0,
+      "model_id": "kimi-k2.7-code",
+      "recorded_initial_calls": 8,
+      "request_ids": [
+        "task-0001-en",
+        "task-0021-zh",
+        "task-0036-en",
+        "task-0086-zh"
+      ],
+      "run_directory": "paper/data/miceplan_lab_v1/runs/model-selection-kimi-k27-2026-07-21",
+      "schema_valid_rate": 1.0,
+      "selection_gate_pass": true,
+      "truncation_rate": 0.0
+    }
+  ],
+  "provisional_preferred_model": "kimi-k2.7-code",
+  "selection_rule": "Require all expected initial calls, zero infrastructure errors, 100% schema-valid output, and zero length truncation; among passing models prefer lower median tokens then latency."
+}

@@ -1,0 +1,156 @@
+{
+  "$id": "https://miceplan-lab.local/schema/layout-edit-ir-v1.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "hard_constraints": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "language": {
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "type": "string"
+    },
+    "operations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "booth_type": {
+            "enum": [
+              null,
+              "standard",
+              "custom"
+            ],
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "count": {
+            "minimum": 1,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "height": {
+            "exclusiveMinimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "region": {
+            "enum": [
+              null,
+              "north",
+              "south",
+              "east",
+              "west"
+            ],
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "target_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "type": {
+            "enum": [
+              "ADD_BOOTH",
+              "MOVE_BOOTH",
+              "RESIZE_BOOTH",
+              "REMOVE_BOOTH",
+              "SPLIT_BOOTH",
+              "RESERVE_AISLE"
+            ],
+            "type": "string"
+          },
+          "width": {
+            "exclusiveMinimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "x": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "y": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "type",
+          "target_ids",
+          "count",
+          "width",
+          "height",
+          "x",
+          "y",
+          "region",
+          "booth_type"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "preferences": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "request_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "requires_confirmation": {
+      "type": "boolean"
+    },
+    "source_layout_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "unresolved_references": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "request_id",
+    "source_layout_version",
+    "language",
+    "operations",
+    "hard_constraints",
+    "preferences",
+    "assumptions",
+    "unresolved_references",
+    "requires_confirmation"
+  ],
+  "title": "MICEPlan-Lab LayoutEditIR",
+  "type": "object"
+}

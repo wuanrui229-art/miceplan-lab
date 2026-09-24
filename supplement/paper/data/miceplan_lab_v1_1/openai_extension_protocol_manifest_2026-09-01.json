@@ -1,0 +1,50 @@
+{
+  "base_formal_selection_sha256": "84ff631cf7754654d2b3d89e905a2cea4c850d7696cf2751202868256ebbcdaf",
+  "base_protocol_id": "miceplan-lab-validation-recovery-v1.2",
+  "base_protocol_manifest_sha256": "12fdbf6ebac88134077a9dacbec1749ddd7e6abba8372e203548d0bcc31db794",
+  "extension_id": "miceplan-lab-v1.2-openai-gpt56-sol-reviewer-extension",
+  "files": [
+    {
+      "path": "paper/experiments/miceplan_lab/THIRD_MODEL_FREEZE_2026-09-01.md",
+      "sha256": "8f79624d34a4e52dc48bafacb1812dc690b30c3da3588cc269b9812b17ce983f"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/PRICING_OPENAI_GPT56_SOL_2026-09-01.json",
+      "sha256": "26884f625954de09423148fffa31615d60e630d31c446a57f6ac8369f74f5934"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/credentials.py",
+      "sha256": "2b5e6977cbbc1dac6449bf976558dd6ac12010dfe5d2da308e2f1cedd1f82dc9"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/openai_adapter.py",
+      "sha256": "118b5057772bb66d91e66e90e9747478fb4ee2bce61a65b8bb15fdba441921c4"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/analyze_development.py",
+      "sha256": "f22a9f326fba3695d390d0151cdc75881ac3d759fc39b76bbdd92b1a4d34dfd6"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/analyze_seeded_run.py",
+      "sha256": "e89055ef7c96f372aacf5fde71d6737ebcf0e8cdd562aa1b943daeda3c504556"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/run_development.py",
+      "sha256": "c7a3373e3e2d8f8626ef53d090aa53e3da38915e25973cc4e086892b76f73cab"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/formal_run_openai.py",
+      "sha256": "1ea78d8ffe3c40f2533749b071ff7221df89366c71c142612700a760b9c7c643"
+    }
+  ],
+  "freeze_date": "2026-09-01",
+  "model_id": "gpt-5.6-sol",
+  "notes": [
+    "This extension responds to the reviewer request for broader model coverage.",
+    "The original v1.2 protocol manifest and Kimi/DeepSeek runner remain byte-for-byte unchanged.",
+    "The generation protocol was originally frozen before any GPT-5.6 Sol development or held-out response was observed.",
+    "After development qualification and before any held-out execution, accounting was amended to record GPT-5.6 cache-write tokens at the official 1.25x input rate; prompts, schemas, schedules, decoding controls, model configuration, and stored responses were unchanged.",
+    "Formal held-out execution requires separate author authorization after development qualification."
+  ],
+  "status": "reviewer-extension-frozen-before-openai-held-out-calls"
+}

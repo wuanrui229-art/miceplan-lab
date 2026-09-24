@@ -1,0 +1,50 @@
+{
+  "author_review": "PASS",
+  "bilingual_pairs": 90,
+  "invalid_probes_expected_rule_pass": 42,
+  "machine_audit": "PASS",
+  "operation_complexity_cells": {
+    "ADD_BOOTH/C1": 5,
+    "ADD_BOOTH/C2": 5,
+    "ADD_BOOTH/C3": 5,
+    "MOVE_BOOTH/C1": 5,
+    "MOVE_BOOTH/C2": 5,
+    "MOVE_BOOTH/C3": 5,
+    "REMOVE_BOOTH/C1": 5,
+    "REMOVE_BOOTH/C2": 5,
+    "REMOVE_BOOTH/C3": 5,
+    "RESERVE_AISLE/C1": 5,
+    "RESERVE_AISLE/C2": 5,
+    "RESERVE_AISLE/C3": 5,
+    "RESIZE_BOOTH/C1": 5,
+    "RESIZE_BOOTH/C2": 5,
+    "RESIZE_BOOTH/C3": 5,
+    "SPLIT_BOOTH/C1": 5,
+    "SPLIT_BOOTH/C2": 5,
+    "SPLIT_BOOTH/C3": 5
+  },
+  "protocol_version": "1.2",
+  "request_count": 180,
+  "scene_count": 8,
+  "schema_valid_records": 278,
+  "semantic_task_count": 90,
+  "source_scenes_oracle_pass": 8,
+  "status": "passed",
+  "surface_review": {
+    "expert_validation": false,
+    "reviewed_tasks": 90,
+    "scope": "bilingual surface form and task-language consistency",
+    "status": "PASS"
+  },
+  "test_stress_strata": {
+    "AMBIGUOUS_TARGET": 9,
+    "BOUNDARY": 9,
+    "FEASIBLE_CONTROL": 18,
+    "LOCKED_MUTATION": 9,
+    "MISSING_EVIDENCE": 9,
+    "OVERLAP": 9,
+    "PROTECTED_POLYGON": 9
+  },
+  "unknown_tasks_context_mask_pass": 24,
+  "valid_witnesses_oracle_and_intent_pass": 66
+}

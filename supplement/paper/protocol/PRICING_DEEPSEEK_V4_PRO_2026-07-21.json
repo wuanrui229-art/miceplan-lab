@@ -1,0 +1,12 @@
+{
+  "access_date": "2026-07-21",
+  "billing_unit_tokens": 1000000,
+  "currency": "USD",
+  "model": "deepseek-v4-pro",
+  "prices_per_million_tokens": {
+    "cache_hit_input": 0.003625,
+    "cache_miss_input": 0.435,
+    "output": 0.87
+  },
+  "source": "https://api-docs.deepseek.com/quick_start/pricing"
+}

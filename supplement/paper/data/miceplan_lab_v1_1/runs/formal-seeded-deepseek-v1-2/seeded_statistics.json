@@ -1,0 +1,222 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260723,
+    "cluster_unit": "semantic_task_id",
+    "effect_direction": "rule_feedback_minus_blind_retry",
+    "unique_clusters": 36
+  },
+  "fault_cardinality": {
+    "1": {
+      "recovery_at_1": {
+        "blind_only_succeeded": 27,
+        "blind_rate": 0.55,
+        "blind_successes": 66,
+        "both_succeeded": 39,
+        "cluster_bootstrap_95_ci": [
+          -0.20690270935960592,
+          0.044642857142857144
+        ],
+        "exact_mcnemar_p_two_sided": 0.17417114727072658,
+        "n": 120,
+        "neither_succeeded": 37,
+        "paired_risk_difference_rule_minus_blind": -0.08333333333333333,
+        "rule_only_succeeded": 17,
+        "rule_rate": 0.4666666666666667,
+        "rule_successes": 56
+      },
+      "recovery_at_3": {
+        "blind_only_succeeded": 19,
+        "blind_rate": 0.625,
+        "blind_successes": 75,
+        "both_succeeded": 56,
+        "cluster_bootstrap_95_ci": [
+          -0.11290322580645161,
+          0.08594423491379301
+        ],
+        "exact_mcnemar_p_two_sided": 1.0,
+        "n": 120,
+        "neither_succeeded": 27,
+        "paired_risk_difference_rule_minus_blind": -0.008333333333333333,
+        "rule_only_succeeded": 18,
+        "rule_rate": 0.6166666666666667,
+        "rule_successes": 74
+      }
+    },
+    "2": {
+      "recovery_at_1": {
+        "blind_only_succeeded": 17,
+        "blind_rate": 0.5222222222222223,
+        "blind_successes": 47,
+        "both_succeeded": 30,
+        "cluster_bootstrap_95_ci": [
+          -0.1,
+          0.2
+        ],
+        "exact_mcnemar_p_two_sided": 0.5223973804968409,
+        "n": 90,
+        "neither_succeeded": 21,
+        "paired_risk_difference_rule_minus_blind": 0.05555555555555555,
+        "rule_only_succeeded": 22,
+        "rule_rate": 0.5777777777777777,
+        "rule_successes": 52
+      },
+      "recovery_at_3": {
+        "blind_only_succeeded": 11,
+        "blind_rate": 0.6777777777777778,
+        "blind_successes": 61,
+        "both_succeeded": 50,
+        "cluster_bootstrap_95_ci": [
+          -0.08171447824412777,
+          0.17073170731707318
+        ],
+        "exact_mcnemar_p_two_sided": 0.557197093963623,
+        "n": 90,
+        "neither_succeeded": 14,
+        "paired_risk_difference_rule_minus_blind": 0.044444444444444446,
+        "rule_only_succeeded": 15,
+        "rule_rate": 0.7222222222222222,
+        "rule_successes": 65
+      }
+    }
+  },
+  "fault_cardinality_interaction": {
+    "recovery_at_1": {
+      "cluster_bootstrap_95_ci": [
+        -0.048444836933321946,
+        0.3217287980533122
+      ],
+      "paired_risk_difference_interaction_two_minus_single": 0.1388888888888889
+    },
+    "recovery_at_3": {
+      "cluster_bootstrap_95_ci": [
+        -0.09923584905660378,
+        0.2073610114777617
+      ],
+      "paired_risk_difference_interaction_two_minus_single": 0.05277777777777778
+    }
+  },
+  "paired_overhead": {
+    "calls": {
+      "cluster_bootstrap_95_ci": [
+        -0.12380952380952381,
+        0.13441377171215874
+      ],
+      "mean_difference_rule_minus_blind": 0.0,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 81,
+        "p_two_sided_approx": 0.9708274920212507,
+        "w_plus": 1652.5
+      }
+    },
+    "cost_usd": {
+      "cluster_bootstrap_95_ci": [
+        -1.4599271163366335e-05,
+        0.0002287604555871212
+      ],
+      "mean_difference_rule_minus_blind": 9.988387142857143e-05,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 210,
+        "p_two_sided_approx": 0.00025306906527213847,
+        "w_plus": 14304.0
+      }
+    },
+    "latency_ms": {
+      "cluster_bootstrap_95_ci": [
+        300.67411864380637,
+        1382.247390091414
+      ],
+      "mean_difference_rule_minus_blind": 817.6611656333333,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 210,
+        "p_two_sided_approx": 0.00034694273005782863,
+        "w_plus": 14232.0
+      }
+    },
+    "tokens": {
+      "cluster_bootstrap_95_ci": [
+        -74.53917329643721,
+        669.303738604488
+      ],
+      "mean_difference_rule_minus_blind": 277.747619047619,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 210,
+        "p_two_sided_approx": 2.355285988781912e-07,
+        "w_plus": 15635.0
+      }
+    }
+  },
+  "policy_audit": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "blocks": 19,
+      "defers": 22,
+      "exposes": 169,
+      "intent_signature_failures": 58,
+      "invalid_operation_exposures": 1,
+      "n": 210,
+      "safe_task_successes": 136,
+      "unsafe_candidate_exposures": 33
+    },
+    "SEEDED_VALIDATE_AND_BLOCK": {
+      "blocks": 210,
+      "defers": 0,
+      "exposes": 0,
+      "intent_signature_failures": 0,
+      "invalid_operation_exposures": 0,
+      "n": 210,
+      "safe_task_successes": 0,
+      "unsafe_candidate_exposures": 0
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "blocks": 11,
+      "defers": 18,
+      "exposes": 181,
+      "intent_signature_failures": 65,
+      "invalid_operation_exposures": 0,
+      "n": 210,
+      "safe_task_successes": 139,
+      "unsafe_candidate_exposures": 42
+    }
+  },
+  "primary_paired_results": {
+    "recovery_at_1": {
+      "blind_only_succeeded": 44,
+      "blind_rate": 0.5380952380952381,
+      "blind_successes": 113,
+      "both_succeeded": 69,
+      "cluster_bootstrap_95_ci": [
+        -0.12871287128712872,
+        0.08081168831168827
+      ],
+      "exact_mcnemar_p_two_sided": 0.6608836477612148,
+      "n": 210,
+      "neither_succeeded": 58,
+      "paired_risk_difference_rule_minus_blind": -0.023809523809523808,
+      "rule_only_succeeded": 39,
+      "rule_rate": 0.5142857142857142,
+      "rule_successes": 108
+    },
+    "recovery_at_3": {
+      "blind_only_succeeded": 30,
+      "blind_rate": 0.6476190476190476,
+      "blind_successes": 136,
+      "both_succeeded": 106,
+      "cluster_bootstrap_95_ci": [
+        -0.07353328173374613,
+        0.10091974793809654
+      ],
+      "exact_mcnemar_p_two_sided": 0.8013064925040662,
+      "n": 210,
+      "neither_succeeded": 41,
+      "paired_risk_difference_rule_minus_blind": 0.014285714285714285,
+      "rule_only_succeeded": 33,
+      "rule_rate": 0.6619047619047619,
+      "rule_successes": 139
+    }
+  },
+  "run_id": "formal-seeded-deepseek-v1-2"
+}

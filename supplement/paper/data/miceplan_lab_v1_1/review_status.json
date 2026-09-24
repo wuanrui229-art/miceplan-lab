@@ -1,0 +1,11 @@
+{
+  "dataset": "miceplan-lab-v1.1",
+  "failed_tasks": 0,
+  "note": "Internal benchmark surface QA only; not expert annotation.",
+  "packet": "AUTHOR_REVIEW_PACKET.md",
+  "passed_tasks": 90,
+  "pending_tasks": 0,
+  "reviewed_tasks": 90,
+  "reviewer_role": "author-supervised internal bilingual surface-form QA",
+  "status": "PASS"
+}

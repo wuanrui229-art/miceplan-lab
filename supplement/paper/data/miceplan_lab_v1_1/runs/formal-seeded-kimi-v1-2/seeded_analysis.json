@@ -1,0 +1,375 @@
+{
+  "actual_unique_cost_usd": 14.41434986,
+  "actual_unique_usage": {
+    "cached_tokens": 221002,
+    "completion_tokens": 1642828,
+    "prompt_tokens": 846131,
+    "total_tokens": 2488959
+  },
+  "completion": {
+    "expected_policy_outcomes": 630,
+    "gate_events": 1058,
+    "heldout_request_ids_observed": [
+      "task-0003-en",
+      "task-0003-zh",
+      "task-0004-en",
+      "task-0004-zh",
+      "task-0007-en",
+      "task-0007-zh",
+      "task-0008-en",
+      "task-0008-zh",
+      "task-0009-en",
+      "task-0009-zh",
+      "task-0012-en",
+      "task-0012-zh",
+      "task-0013-en",
+      "task-0013-zh",
+      "task-0014-en",
+      "task-0014-zh",
+      "task-0018-en",
+      "task-0018-zh",
+      "task-0019-en",
+      "task-0019-zh",
+      "task-0022-en",
+      "task-0022-zh",
+      "task-0023-en",
+      "task-0023-zh",
+      "task-0024-en",
+      "task-0024-zh",
+      "task-0027-en",
+      "task-0027-zh",
+      "task-0028-en",
+      "task-0028-zh",
+      "task-0029-en",
+      "task-0029-zh",
+      "task-0030-en",
+      "task-0030-zh",
+      "task-0062-en",
+      "task-0062-zh",
+      "task-0063-en",
+      "task-0063-zh",
+      "task-0064-en",
+      "task-0064-zh",
+      "task-0067-en",
+      "task-0067-zh",
+      "task-0068-en",
+      "task-0068-zh",
+      "task-0069-en",
+      "task-0069-zh",
+      "task-0072-en",
+      "task-0072-zh",
+      "task-0073-en",
+      "task-0073-zh",
+      "task-0074-en",
+      "task-0074-zh",
+      "task-0075-en",
+      "task-0075-zh",
+      "task-0077-en",
+      "task-0077-zh",
+      "task-0078-en",
+      "task-0078-zh",
+      "task-0079-en",
+      "task-0079-zh",
+      "task-0082-en",
+      "task-0082-zh",
+      "task-0083-en",
+      "task-0083-zh",
+      "task-0084-en",
+      "task-0084-zh",
+      "task-0087-en",
+      "task-0087-zh",
+      "task-0088-en",
+      "task-0088-zh",
+      "task-0089-en",
+      "task-0089-zh"
+    ],
+    "heldout_seed_ids_observed": [
+      "seed-task-0003-boundary+overlap",
+      "seed-task-0003-protected_polygon",
+      "seed-task-0004-boundary+protected_polygon",
+      "seed-task-0004-protected_polygon",
+      "seed-task-0007-boundary+overlap",
+      "seed-task-0007-overlap",
+      "seed-task-0008-overlap+protected_polygon",
+      "seed-task-0008-protected_polygon",
+      "seed-task-0009-overlap+protected_polygon",
+      "seed-task-0009-protected_polygon",
+      "seed-task-0012-boundary+overlap",
+      "seed-task-0012-overlap",
+      "seed-task-0013-boundary+protected_polygon",
+      "seed-task-0013-overlap",
+      "seed-task-0014-boundary+protected_polygon",
+      "seed-task-0014-protected_polygon",
+      "seed-task-0018-overlap+protected_polygon",
+      "seed-task-0018-protected_polygon",
+      "seed-task-0019-overlap+protected_polygon",
+      "seed-task-0019-protected_polygon",
+      "seed-task-0022-boundary",
+      "seed-task-0022-boundary+protected_polygon",
+      "seed-task-0023-boundary+overlap",
+      "seed-task-0023-overlap",
+      "seed-task-0024-boundary+overlap",
+      "seed-task-0024-overlap",
+      "seed-task-0027-boundary+protected_polygon",
+      "seed-task-0027-protected_polygon",
+      "seed-task-0028-boundary+protected_polygon",
+      "seed-task-0028-overlap",
+      "seed-task-0029-boundary+overlap",
+      "seed-task-0029-overlap",
+      "seed-task-0030-boundary+overlap",
+      "seed-task-0030-overlap",
+      "seed-task-0062-boundary",
+      "seed-task-0062-overlap+protected_polygon",
+      "seed-task-0063-boundary+protected_polygon",
+      "seed-task-0063-overlap",
+      "seed-task-0064-boundary",
+      "seed-task-0064-overlap+protected_polygon",
+      "seed-task-0067-overlap",
+      "seed-task-0067-overlap+protected_polygon",
+      "seed-task-0068-boundary+overlap",
+      "seed-task-0068-overlap",
+      "seed-task-0069-overlap+protected_polygon",
+      "seed-task-0069-protected_polygon",
+      "seed-task-0072-boundary+protected_polygon",
+      "seed-task-0072-protected_polygon",
+      "seed-task-0073-boundary+protected_polygon",
+      "seed-task-0073-protected_polygon",
+      "seed-task-0074-boundary",
+      "seed-task-0074-boundary+overlap",
+      "seed-task-0075-overlap",
+      "seed-task-0075-overlap+protected_polygon",
+      "seed-task-0077-boundary",
+      "seed-task-0078-boundary",
+      "seed-task-0079-boundary",
+      "seed-task-0082-boundary",
+      "seed-task-0083-boundary",
+      "seed-task-0084-boundary",
+      "seed-task-0087-boundary",
+      "seed-task-0088-boundary",
+      "seed-task-0089-boundary"
+    ],
+    "infrastructure_error_records": 3,
+    "recorded_policy_outcomes": 630,
+    "scheduled_jobs": 210,
+    "unique_model_calls": 428
+  },
+  "experiment_track": "formal_seeded_conditional_recovery",
+  "feedback_isolation_audit": {
+    "blind_retry_calls": 214,
+    "rule_feedback_calls": 214,
+    "rule_feedback_payloads_match_prompt": true
+  },
+  "initial_seed_audit": {
+    "all_initial_candidates_fail": true,
+    "all_initial_candidates_preserve_intent_signature": true,
+    "all_initial_rule_sets_match_declared_seed_rule": true
+  },
+  "model_quality": {
+    "infrastructure_retry_count": 4,
+    "length_truncations": 0,
+    "schema_valid_calls": 428
+  },
+  "paired_rule_vs_blind": {
+    "blind_retry_only_succeeded": 22,
+    "both_succeeded": 155,
+    "median_attempt_difference_rule_minus_blind": 0.0,
+    "neither_succeeded": 17,
+    "paired_cases": 210,
+    "rule_feedback_only_succeeded": 16
+  },
+  "policies": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "conceptual_policy_cost_usd": 7.058111480000001,
+      "final_actions": {
+        "EXPOSE": 210
+      },
+      "mean_model_calls": 1.019047619047619,
+      "median_total_latency_ms": 14952.457625,
+      "n": 210,
+      "safe_task_success_rate": 0.8428571428571429,
+      "safe_task_successes": 177,
+      "semantic_attempts": {
+        "1": 206,
+        "2": 4
+      },
+      "usage": {
+        "cached_tokens": 99391,
+        "completion_tokens": 804167,
+        "prompt_tokens": 408342,
+        "total_tokens": 1212509
+      }
+    },
+    "SEEDED_VALIDATE_AND_BLOCK": {
+      "conceptual_policy_cost_usd": 0.0,
+      "final_actions": {
+        "BLOCK": 210
+      },
+      "mean_model_calls": 0.0,
+      "median_total_latency_ms": 0.0,
+      "n": 210,
+      "safe_task_success_rate": 0.0,
+      "safe_task_successes": 0,
+      "semantic_attempts": {
+        "0": 210
+      },
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 0,
+        "prompt_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "conceptual_policy_cost_usd": 7.35623838,
+      "final_actions": {
+        "DEFER": 2,
+        "EXPOSE": 208
+      },
+      "mean_model_calls": 1.019047619047619,
+      "median_total_latency_ms": 17159.7040205,
+      "n": 210,
+      "safe_task_success_rate": 0.8142857142857143,
+      "safe_task_successes": 171,
+      "semantic_attempts": {
+        "1": 206,
+        "2": 4
+      },
+      "usage": {
+        "cached_tokens": 121611,
+        "completion_tokens": 838661,
+        "prompt_tokens": 437789,
+        "total_tokens": 1276450
+      }
+    }
+  },
+  "pricing": {
+    "access_date": "2026-07-21",
+    "billing_unit_tokens": 1000000,
+    "currency": "USD",
+    "model_id": "kimi-k2.7-code-highspeed",
+    "prices_per_million_tokens": {
+      "cache_hit_input": 0.38,
+      "cache_miss_input": 1.9,
+      "output": 8.0
+    },
+    "source": "https://platform.kimi.ai/docs/pricing/chat-k27-code.md",
+    "tax_included": false
+  },
+  "recovery": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "1": {
+        "entered": 210,
+        "marginal_recovery_rate": 0.8285714285714286,
+        "newly_recovered": 174,
+        "recovery_at_k": 0.8285714285714286
+      },
+      "2": {
+        "entered": 4,
+        "marginal_recovery_rate": 0.75,
+        "newly_recovered": 3,
+        "recovery_at_k": 0.8428571428571429
+      },
+      "3": {
+        "entered": 0,
+        "marginal_recovery_rate": null,
+        "newly_recovered": 0,
+        "recovery_at_k": 0.8428571428571429
+      }
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "1": {
+        "entered": 210,
+        "marginal_recovery_rate": 0.8,
+        "newly_recovered": 168,
+        "recovery_at_k": 0.8
+      },
+      "2": {
+        "entered": 4,
+        "marginal_recovery_rate": 0.75,
+        "newly_recovered": 3,
+        "recovery_at_k": 0.8142857142857143
+      },
+      "3": {
+        "entered": 0,
+        "marginal_recovery_rate": null,
+        "newly_recovered": 0,
+        "recovery_at_k": 0.8142857142857143
+      }
+    }
+  },
+  "rule_strata": {
+    "BOUNDARY": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 46,
+        "safe_task_success_rate": 0.6521739130434783,
+        "safe_task_successes": 30
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 46,
+        "safe_task_success_rate": 0.6956521739130435,
+        "safe_task_successes": 32
+      }
+    },
+    "BOUNDARY+OVERLAP": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 26,
+        "safe_task_success_rate": 0.9615384615384616,
+        "safe_task_successes": 25
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 26,
+        "safe_task_success_rate": 0.9230769230769231,
+        "safe_task_successes": 24
+      }
+    },
+    "BOUNDARY+PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 30,
+        "safe_task_success_rate": 0.9666666666666667,
+        "safe_task_successes": 29
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 30,
+        "safe_task_success_rate": 0.9,
+        "safe_task_successes": 27
+      }
+    },
+    "OVERLAP": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 40,
+        "safe_task_success_rate": 0.75,
+        "safe_task_successes": 30
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 40,
+        "safe_task_success_rate": 0.625,
+        "safe_task_successes": 25
+      }
+    },
+    "OVERLAP+PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 34,
+        "safe_task_success_rate": 0.9117647058823529,
+        "safe_task_successes": 31
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 34,
+        "safe_task_success_rate": 0.9117647058823529,
+        "safe_task_successes": 31
+      }
+    },
+    "PROTECTED_POLYGON": {
+      "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+        "n": 34,
+        "safe_task_success_rate": 0.9411764705882353,
+        "safe_task_successes": 32
+      },
+      "SEEDED_VALIDATE_AND_REPAIR": {
+        "n": 34,
+        "safe_task_success_rate": 0.9411764705882353,
+        "safe_task_successes": 32
+      }
+    }
+  },
+  "run_id": "formal-seeded-kimi-v1-2"
+}

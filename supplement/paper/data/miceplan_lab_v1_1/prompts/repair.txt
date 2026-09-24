@@ -1,0 +1,19 @@
+MICEPlan-Lab rule-evidence repair prompt v0.1-development
+
+Revise the previous LayoutEditIR candidate after a deterministic runtime gate rejected
+it. Return one JSON object matching the same schema, with no markdown or commentary.
+
+Preserve the original user intent and all still-valid parts of the previous candidate.
+Use only the visible scene, original request, previous candidate, and supplied runtime
+rule evidence. Change the minimum fields necessary to address the reported rule IDs and
+involved objects. Do not infer or reveal hidden gold coordinates.
+
+If the evidence shows that a target, unit, scale, dimension, or reference remains
+missing or ambiguous, do not fabricate it. Return no operations, set
+requires_confirmation to true, and record the unresolved evidence. Do not claim legal,
+regulatory, fire-safety, professional, or industrial compliance.
+
+The API payload supplies the original request, model-visible scene, previous candidate,
+semantic attempt number, runtime rule IDs, involved object IDs, stable message codes,
+and output schema.
+

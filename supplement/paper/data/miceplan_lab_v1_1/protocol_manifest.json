@@ -1,0 +1,92 @@
+{
+  "dataset_version": "miceplan-lab-v1.1",
+  "files": [
+    {
+      "path": "paper/MICEPLAN_LAB_PROTOCOL_V1.md",
+      "sha256": "e90cb765310083d4354aae8102df2ed8b09ad4d5b88a2ee85fcd6cab47d10091"
+    },
+    {
+      "path": "paper/MICEPLAN_LAB_PROTOCOL_V1_2_SUPPLEMENT.md",
+      "sha256": "016e973ea7c7c9bb47d27ff037330e87818574cdeb6bdf18b681c710a8d40089"
+    },
+    {
+      "path": "paper/MICEPLAN_LAB_PROTOCOL_REVIEW.md",
+      "sha256": "c71bc2c0d8f39537320a03dd8544e01bce9c18ba77ac2daf81ef4aca10b20f64"
+    },
+    {
+      "path": "paper/experiments/MICEPLAN_LAB_IMPLEMENTATION_PLAN.md",
+      "sha256": "5783f5178a7c95f7466b441be5275e21c063c24dd6a10d8a14d91455d2642c3b"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/BENCHMARK_REPAIR_REPORT_2026-07-22.md",
+      "sha256": "531e1c2f21b797a514bf8c15fd50f84ef52af7249e5b8bc0c60a770cc16dc101"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/SECOND_MODEL_FREEZE_2026-07-21.md",
+      "sha256": "82ceebd0b63c1320d0552cc5a71adc8d3966b0bb5b81ff72c2fa6431f6586666"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/finalize_surface_review.py",
+      "sha256": "0f29fb2634b0afb34dc0692344cfa1a13f57ca8f4d56598de4ea6b9b4584cd5e"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/freeze_formal_selection.py",
+      "sha256": "bb766b53254fa1fde9d2e9cf633a5e37612018b53f2bcfe07a30bd9924b0ed54"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/formal_run.py",
+      "sha256": "a842f2011348d8b6a5222a00cbd0ac1f11eb2b2212e1b5a7b661887dca02ee18"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/generate_benchmark.py",
+      "sha256": "e9e52f2a5428a474aaabed27ce89724e7d9dac7e61d243a537687e723ff02db0"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/audit_benchmark.py",
+      "sha256": "272cb501adfffe296d5353f4e36085225c86c0707128fdc4e5604faa04aa3b61"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/contracts.py",
+      "sha256": "6c52cae662a8760897cfa1babb2741e46a7f66eb23c6580b853d24269be61303"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/execution.py",
+      "sha256": "8b9f5702ce7333eab88a98c16aa62d8225e9837d7a3b5290eab80980e478a9d0"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/journal.py",
+      "sha256": "ab6eda5bb0a9d0f347b56eb52846f6a53391d5d07849934a0aa452577bf85dfc"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/live_adapter.py",
+      "sha256": "c5179d477e0b76aa323ffdc092f692282ff709ea18b938418c95eef46f851a57"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/oracle.py",
+      "sha256": "500c65087ff93109bbed8f52c4cd018b6f397d48879bb0ce16fc0d64c3967178"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/policy_runner.py",
+      "sha256": "c39ee535001e7fec5a5c544bb416c83da7499fb5097cc92b05112c204de918e3"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/runtime_gate.py",
+      "sha256": "2df06d7b6f1e60f411e6e7e4d63186e64f8ef1c1633fd5206232279ca1180ac3"
+    },
+    {
+      "path": "paper/experiments/miceplan_lab/seeded_runner.py",
+      "sha256": "ecc737f55decb08fb71bab02aa4948552a48bad5bbf69cf077f9911d53e29b9e"
+    }
+  ],
+  "freeze_date": "2026-07-22",
+  "notes": [
+    "This freeze follows rejection of v1 by the complete interactive author review.",
+    "No held-out or formal model call has used v1.1.",
+    "The v1 benchmark and preliminary development runs remain unchanged for provenance.",
+    "The repaired v1.1 task pairs passed internal bilingual surface-form QA.",
+    "No practitioner or CAD-domain expert validation is claimed."
+  ],
+  "protocol_id": "miceplan-lab-validation-recovery-v1.2",
+  "protocol_version": "1.2",
+  "status": "benchmark-and-protocol-frozen-before-formal-calls"
+}

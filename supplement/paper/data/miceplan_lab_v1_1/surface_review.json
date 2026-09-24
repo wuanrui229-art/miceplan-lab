@@ -1,0 +1,23 @@
+{
+  "dataset": "miceplan-lab-v1.1",
+  "failed_tasks": 0,
+  "limitations": [
+    "This review is not practitioner annotation or CAD-domain expert validation.",
+    "Task naturalness is bounded to the controlled synthetic command templates.",
+    "Geometry, intent witnesses, context masks, and invalid probes are validated separately by the machine audit."
+  ],
+  "packet": "AUTHOR_REVIEW_PACKET.md",
+  "passed_tasks": 90,
+  "pending_tasks": 0,
+  "requests_sha256": "5699e68d696efb95cb8f27206c689c8f8768306edca0b6e10fea25db10bdfb37",
+  "review_date": "2026-07-22",
+  "review_scope": [
+    "Chinese-English semantic equivalence",
+    "visible operation, target, quantity, dimension, and direction consistency",
+    "natural wording for missing-evidence and ambiguous-reference requests",
+    "absence of explicit stress labels or intended defer reasons in visible requests"
+  ],
+  "reviewed_tasks": 90,
+  "reviewer_role": "author-supervised internal bilingual surface-form QA",
+  "status": "PASS"
+}

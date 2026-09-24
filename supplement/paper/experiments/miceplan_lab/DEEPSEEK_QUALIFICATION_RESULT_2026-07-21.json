@@ -1,0 +1,47 @@
+{
+  "access_date": "2026-07-21",
+  "configuration": {
+    "endpoint": "https://api.deepseek.com/beta/chat/completions",
+    "max_output_tokens": 32768,
+    "model": "deepseek-v4-pro",
+    "output_contract": "provider-enforced strict function tool with reversible null-sentinel wire encoding",
+    "thinking": "disabled"
+  },
+  "failed_preflight_runs": [
+    {
+      "model_generations": 0,
+      "reason": "strict schema rejected an untyped null anyOf branch",
+      "run_id": "model-selection-deepseek-v4-pro-2026-07-21"
+    },
+    {
+      "model_generations": 0,
+      "reason": "thinking mode rejected forced tool_choice",
+      "run_id": "model-selection-deepseek-v4-pro-nullsentinel-v2-2026-07-21"
+    }
+  ],
+  "qualification": {
+    "actual_unique_cost_usd": 0.008954214,
+    "expected_initial_calls": 8,
+    "infrastructure_error_records": 0,
+    "median_latency_ms": 6035.399063000001,
+    "median_total_tokens": 2777.0,
+    "recorded_initial_calls": 8,
+    "schema_valid_rate": 1.0,
+    "selection_gate_pass": true,
+    "total_usage": {
+      "cached_tokens": 4608,
+      "completion_tokens": 3210,
+      "prompt_tokens": 18734,
+      "total_tokens": 21944
+    },
+    "truncation_rate": 0.0
+  },
+  "request_ids": [
+    "task-0001-en",
+    "task-0021-zh",
+    "task-0036-en",
+    "task-0086-zh"
+  ],
+  "run_id": "model-selection-deepseek-v4-pro-strict-nonthinking-v3-2026-07-21",
+  "scope": "development-only engineering qualification; not a formal paper result"
+}

@@ -1,0 +1,222 @@
+{
+  "analysis": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260723,
+    "cluster_unit": "semantic_task_id",
+    "effect_direction": "rule_feedback_minus_blind_retry",
+    "unique_clusters": 36
+  },
+  "fault_cardinality": {
+    "1": {
+      "recovery_at_1": {
+        "blind_only_succeeded": 19,
+        "blind_rate": 0.75,
+        "blind_successes": 90,
+        "both_succeeded": 71,
+        "cluster_bootstrap_95_ci": [
+          -0.11206896551724138,
+          0.06666666666666667
+        ],
+        "exact_mcnemar_p_two_sided": 0.7358788008568808,
+        "n": 120,
+        "neither_succeeded": 14,
+        "paired_risk_difference_rule_minus_blind": -0.025,
+        "rule_only_succeeded": 16,
+        "rule_rate": 0.725,
+        "rule_successes": 87
+      },
+      "recovery_at_3": {
+        "blind_only_succeeded": 17,
+        "blind_rate": 0.7666666666666667,
+        "blind_successes": 92,
+        "both_succeeded": 75,
+        "cluster_bootstrap_95_ci": [
+          -0.11031454248366011,
+          0.0673076923076923
+        ],
+        "exact_mcnemar_p_two_sided": 0.720100131817162,
+        "n": 120,
+        "neither_succeeded": 14,
+        "paired_risk_difference_rule_minus_blind": -0.025,
+        "rule_only_succeeded": 14,
+        "rule_rate": 0.7416666666666667,
+        "rule_successes": 89
+      }
+    },
+    "2": {
+      "recovery_at_1": {
+        "blind_only_succeeded": 6,
+        "blind_rate": 0.9333333333333333,
+        "blind_successes": 84,
+        "both_succeeded": 78,
+        "cluster_bootstrap_95_ci": [
+          -0.08571428571428572,
+          0.011111111111111112
+        ],
+        "exact_mcnemar_p_two_sided": 0.5078125,
+        "n": 90,
+        "neither_succeeded": 3,
+        "paired_risk_difference_rule_minus_blind": -0.03333333333333333,
+        "rule_only_succeeded": 3,
+        "rule_rate": 0.9,
+        "rule_successes": 81
+      },
+      "recovery_at_3": {
+        "blind_only_succeeded": 5,
+        "blind_rate": 0.9444444444444444,
+        "blind_successes": 85,
+        "both_succeeded": 80,
+        "cluster_bootstrap_95_ci": [
+          -0.08108108108108109,
+          0.0
+        ],
+        "exact_mcnemar_p_two_sided": 0.453125,
+        "n": 90,
+        "neither_succeeded": 3,
+        "paired_risk_difference_rule_minus_blind": -0.03333333333333333,
+        "rule_only_succeeded": 2,
+        "rule_rate": 0.9111111111111111,
+        "rule_successes": 82
+      }
+    }
+  },
+  "fault_cardinality_interaction": {
+    "recovery_at_1": {
+      "cluster_bootstrap_95_ci": [
+        -0.11201769327030033,
+        0.08458143016477898
+      ],
+      "paired_risk_difference_interaction_two_minus_single": -0.008333333333333331
+    },
+    "recovery_at_3": {
+      "cluster_bootstrap_95_ci": [
+        -0.11261453435214211,
+        0.08308999516997571
+      ],
+      "paired_risk_difference_interaction_two_minus_single": -0.008333333333333331
+    }
+  },
+  "paired_overhead": {
+    "calls": {
+      "cluster_bootstrap_95_ci": [
+        -0.019417475728155338,
+        0.019417475728155338
+      ],
+      "mean_difference_rule_minus_blind": 0.0,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 8,
+        "p_two_sided_approx": 1.0,
+        "w_plus": 18.0
+      }
+    },
+    "cost_usd": {
+      "cluster_bootstrap_95_ci": [
+        -0.0026105913052884614,
+        0.005358794098641938
+      ],
+      "mean_difference_rule_minus_blind": 0.0014196519047619046,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 210,
+        "p_two_sided_approx": 0.10824839028629334,
+        "w_plus": 12494.0
+      }
+    },
+    "latency_ms": {
+      "cluster_bootstrap_95_ci": [
+        -3114.4751200616943,
+        3137.9162166346914
+      ],
+      "mean_difference_rule_minus_blind": 104.33338196190472,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 210,
+        "p_two_sided_approx": 0.16228977316862847,
+        "w_plus": 12310.0
+      }
+    },
+    "tokens": {
+      "cluster_bootstrap_95_ci": [
+        -207.64567853564867,
+        817.6408928571428
+      ],
+      "mean_difference_rule_minus_blind": 304.4809523809524,
+      "n": 210,
+      "wilcoxon_signed_rank_sensitivity": {
+        "n_nonzero": 210,
+        "p_two_sided_approx": 0.027934672254859762,
+        "w_plus": 13016.0
+      }
+    }
+  },
+  "policy_audit": {
+    "SEEDED_VALIDATE_AND_BLIND_RETRY": {
+      "blocks": 0,
+      "defers": 0,
+      "exposes": 210,
+      "intent_signature_failures": 33,
+      "invalid_operation_exposures": 0,
+      "n": 210,
+      "safe_task_successes": 177,
+      "unsafe_candidate_exposures": 33
+    },
+    "SEEDED_VALIDATE_AND_BLOCK": {
+      "blocks": 210,
+      "defers": 0,
+      "exposes": 0,
+      "intent_signature_failures": 0,
+      "invalid_operation_exposures": 0,
+      "n": 210,
+      "safe_task_successes": 0,
+      "unsafe_candidate_exposures": 0
+    },
+    "SEEDED_VALIDATE_AND_REPAIR": {
+      "blocks": 0,
+      "defers": 2,
+      "exposes": 208,
+      "intent_signature_failures": 39,
+      "invalid_operation_exposures": 0,
+      "n": 210,
+      "safe_task_successes": 171,
+      "unsafe_candidate_exposures": 37
+    }
+  },
+  "primary_paired_results": {
+    "recovery_at_1": {
+      "blind_only_succeeded": 25,
+      "blind_rate": 0.8285714285714286,
+      "blind_successes": 174,
+      "both_succeeded": 149,
+      "cluster_bootstrap_95_ci": [
+        -0.08333333333333333,
+        0.028037383177570093
+      ],
+      "exact_mcnemar_p_two_sided": 0.4513808323961257,
+      "n": 210,
+      "neither_succeeded": 17,
+      "paired_risk_difference_rule_minus_blind": -0.02857142857142857,
+      "rule_only_succeeded": 19,
+      "rule_rate": 0.8,
+      "rule_successes": 168
+    },
+    "recovery_at_3": {
+      "blind_only_succeeded": 22,
+      "blind_rate": 0.8428571428571429,
+      "blind_successes": 177,
+      "both_succeeded": 155,
+      "cluster_bootstrap_95_ci": [
+        -0.08163265306122448,
+        0.024752475247524754
+      ],
+      "exact_mcnemar_p_two_sided": 0.417692190836533,
+      "n": 210,
+      "neither_succeeded": 17,
+      "paired_risk_difference_rule_minus_blind": -0.02857142857142857,
+      "rule_only_succeeded": 16,
+      "rule_rate": 0.8142857142857143,
+      "rule_successes": 171
+    }
+  },
+  "run_id": "formal-seeded-kimi-v1-2"
+}

@@ -1,0 +1,14 @@
+{
+  "access_date": "2026-09-01",
+  "billing_unit_tokens": 1000000,
+  "currency": "USD",
+  "model_id": "gpt-5.6-sol",
+  "prices_per_million_tokens": {
+    "cache_hit_input": 0.4,
+    "cache_miss_input": 4.0,
+    "cache_write_input": 5.0,
+    "output": 20.0
+  },
+  "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+  "tax_included": false
+}

@@ -1,0 +1,55 @@
+{
+  "policies": {
+    "CONSTRAINT_IN_PROMPT": {
+      "block_rate": 0.013888888888888888,
+      "defer_rate": 0.018518518518518517,
+      "invalid_operation_exposure_rate": 0.10648148148148148,
+      "mean_model_latency_ms": 8169.8278273333335,
+      "mean_semantic_call_count": 1.0,
+      "mean_total_tokens": 2935.796296296296,
+      "n": 216,
+      "safe_task_success_rate": 0.3287037037037037
+    },
+    "LLM_ONLY": {
+      "block_rate": 0.013888888888888888,
+      "defer_rate": 0.009259259259259259,
+      "invalid_operation_exposure_rate": 0.041666666666666664,
+      "mean_model_latency_ms": 6638.588541490741,
+      "mean_semantic_call_count": 1.0,
+      "mean_total_tokens": 2735.634259259259,
+      "n": 216,
+      "safe_task_success_rate": 0.2361111111111111
+    },
+    "VALIDATE_AND_BLIND_RETRY": {
+      "block_rate": 0.0,
+      "defer_rate": 0.6990740740740741,
+      "invalid_operation_exposure_rate": 0.0,
+      "mean_model_latency_ms": 6781.78648613426,
+      "mean_semantic_call_count": 1.0185185185185186,
+      "mean_total_tokens": 2796.925925925926,
+      "n": 216,
+      "safe_task_success_rate": 0.24537037037037038
+    },
+    "VALIDATE_AND_BLOCK": {
+      "block_rate": 0.013888888888888888,
+      "defer_rate": 0.6944444444444444,
+      "invalid_operation_exposure_rate": 0.0,
+      "mean_model_latency_ms": 6638.588541490741,
+      "mean_semantic_call_count": 1.0,
+      "mean_total_tokens": 2735.634259259259,
+      "n": 216,
+      "safe_task_success_rate": 0.2361111111111111
+    },
+    "VALIDATE_AND_REPAIR": {
+      "block_rate": 0.0,
+      "defer_rate": 0.6944444444444444,
+      "invalid_operation_exposure_rate": 0.0,
+      "mean_model_latency_ms": 6923.24887000463,
+      "mean_semantic_call_count": 1.0277777777777777,
+      "mean_total_tokens": 2840.662037037037,
+      "n": 216,
+      "safe_task_success_rate": 0.25
+    }
+  },
+  "row_count": 1080
+}
